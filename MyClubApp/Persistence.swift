@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  MyClubApp
 //
-//  Created by Pole Star on 30/08/2022.
+//  Created by Honoré BIZAGWIRA on 30/08/2022.
 //
 
 import CoreData

@@ -2,7 +2,7 @@
 //  EventsView.swift
 //  MyClubApp
 //
-//  Created by Pole Star on 31/08/2022.
+//  Created by Honoré BIZAGWIRA on 31/08/2022.
 //
 
 import SwiftUI
