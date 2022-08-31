@@ -59,10 +59,14 @@ extension BaseView  {
                         let clubUrl: String = try! Configuration.value(for:"MY_CLUB_WEB_URL")
                         HomeWebView(url: URL(string: clubUrl)!)
                     case .signup:
-                        SignUpView()
+                        SignInScreenView()
+                    case .about:
+                        AboutView()
+                    case .event:
+                        EventsView()
+                    case .profile:
+                        ProfileView()
                 }
-                //
-
             }
         }
     }

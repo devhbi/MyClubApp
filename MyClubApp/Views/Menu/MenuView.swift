@@ -158,7 +158,9 @@ extension MenuView  {
 
     var EventBarItem: some View {
         Button(action: {
-            
+            withAnimation(.default) {
+                self.presentedView.currentView = .event
+            }
         }){
             HStack(spacing: 22) {
                 Image(systemName: "calendar")
@@ -198,7 +200,9 @@ extension MenuView  {
 
     var LogOutBarItem: some View {
         Button(action: {
-            
+            withAnimation(.default) {
+                self.presentedView.currentView = .home
+            }
         }){
             HStack(spacing: 22) {
                 Image(systemName: "rectangle.portrait.and.arrow.right")
@@ -217,7 +221,9 @@ extension MenuView  {
 
     var AboutBarItem: some View {
         Button(action: {
-            
+            withAnimation(.default) {
+                self.presentedView.currentView = .about
+            }
         }){
             HStack(spacing: 22) {
                 Image(systemName: "exclamationmark.circle.fill")

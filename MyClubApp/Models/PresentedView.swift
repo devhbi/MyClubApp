@@ -10,7 +10,7 @@ import Foundation
 
 class PresentedView: ObservableObject {
     enum AvailableViews {
-        case home, signup
+        case home, signup, about, event, profile
     }
-    @Published var currentView: AvailableViews = .home
+    @Published var currentView: AvailableViews = .signup
 }
