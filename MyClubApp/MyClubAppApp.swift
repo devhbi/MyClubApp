@@ -12,7 +12,8 @@ struct MyClubApp: App {
     var body: some Scene {
         WindowGroup {
             BaseView()
-                .environmentObject(PresentedView())
+                .environmentObject(HomeViewController())
+                .environmentObject(SignUpViewController())
         }
     }
 }

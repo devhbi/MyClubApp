@@ -15,16 +15,28 @@
 		6FD6956828BED72B00677F7A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955628BED72A00677F7A /* Configuration.swift */; };
 		6FD6956928BED72B00677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
 		6FD6956A28BED72B00677F7A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955A28BED72A00677F7A /* OnBoardingView.swift */; };
-		6FD6956B28BED72B00677F7A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955C28BED72A00677F7A /* SignUpView.swift */; };
+		6FD6956B28BED72B00677F7A /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955C28BED72A00677F7A /* SignInScreenView.swift */; };
 		6FD6956C28BED72B00677F7A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955E28BED72A00677F7A /* MenuView.swift */; };
 		6FD6956D28BED72B00677F7A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955F28BED72A00677F7A /* BaseView.swift */; };
-		6FD6956E28BED72B00677F7A /* PresentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956128BED72A00677F7A /* PresentedView.swift */; };
+		6FD6956E28BED72B00677F7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956128BED72A00677F7A /* HomeViewController.swift */; };
 		6FD6956F28BED72B00677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6956428BED72B00677F7A /* Assets.xcassets */; };
 		6FD6957128BED72B00677F7A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956728BED72B00677F7A /* WebViewController.swift */; };
 		6FD6957928BEDB9800677F7A /* FCEBM-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6957828BEDB9800677F7A /* FCEBM-Info.plist */; };
-		6FD6957C28BEE3DE00677F7A /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventsView.swift */; };
+		6FD6957C28BEE3DE00677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
 		6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957E28BEE41D00677F7A /* AboutView.swift */; };
 		6FD6958228BEE4AA00677F7A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* ProfileView.swift */; };
+		6FD6958428BFC5D500677F7A /* RootSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958328BFC5D500677F7A /* RootSignUpView.swift */; };
+		6FD6958628BFC67F00677F7A /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958528BFC67F00677F7A /* EmailSignUpView.swift */; };
+		6FD6958828BFC6A300677F7A /* CivilRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958728BFC6A200677F7A /* CivilRegistryScreenView.swift */; };
+		6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958928BFC73300677F7A /* SignUpViewController.swift */; };
+		6FD6958E28C02AFF00677F7A /* EntryTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */; };
+		6FD6959028C02D1900677F7A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958F28C02D1900677F7A /* AuthViewModel.swift */; };
+		6FD6959428C030B200677F7A /* ItemButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959328C030B200677F7A /* ItemButtonStyle.swift */; };
+		6FD6959728C0364600677F7A /* CreateNewUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959628C0364600677F7A /* CreateNewUserViewModel.swift */; };
+		6FD6959928C036A900677F7A /* NewUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959828C036A900677F7A /* NewUserModel.swift */; };
+		6FD6959C28C0377000677F7A /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959B28C0377000677F7A /* DataEncoding.swift */; };
+		6FD6959E28C0462000677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
+		6FD695A028C0475700677F7A /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959F28C0475700677F7A /* DatePickerTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,16 +49,28 @@
 		6FD6955628BED72A00677F7A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		6FD6955928BED72A00677F7A /* HomeWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWebView.swift; sourceTree = "<group>"; };
 		6FD6955A28BED72A00677F7A /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
-		6FD6955C28BED72A00677F7A /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		6FD6955C28BED72A00677F7A /* SignInScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		6FD6955E28BED72A00677F7A /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		6FD6955F28BED72A00677F7A /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		6FD6956128BED72A00677F7A /* PresentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedView.swift; sourceTree = "<group>"; };
+		6FD6956128BED72A00677F7A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6FD6956428BED72B00677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD6956728BED72B00677F7A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6FD6957828BEDB9800677F7A /* FCEBM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FCEBM-Info.plist"; sourceTree = "<group>"; };
-		6FD6957B28BEE3DE00677F7A /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenView.swift; sourceTree = "<group>"; };
 		6FD6957E28BEE41D00677F7A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		6FD6958128BEE4AA00677F7A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6FD6958328BFC5D500677F7A /* RootSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSignUpView.swift; sourceTree = "<group>"; };
+		6FD6958528BFC67F00677F7A /* EmailSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpView.swift; sourceTree = "<group>"; };
+		6FD6958728BFC6A200677F7A /* CivilRegistryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilRegistryScreenView.swift; sourceTree = "<group>"; };
+		6FD6958928BFC73300677F7A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTextFieldView.swift; sourceTree = "<group>"; };
+		6FD6958F28C02D1900677F7A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		6FD6959328C030B200677F7A /* ItemButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButtonStyle.swift; sourceTree = "<group>"; };
+		6FD6959628C0364600677F7A /* CreateNewUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewModel.swift; sourceTree = "<group>"; };
+		6FD6959828C036A900677F7A /* NewUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserModel.swift; sourceTree = "<group>"; };
+		6FD6959B28C0377000677F7A /* DataEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
+		6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRegistryScreenView.swift; sourceTree = "<group>"; };
+		6FD6959F28C0475700677F7A /* DatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +103,7 @@
 		6FD6952428BEBE4400677F7A /* MyClubApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6959528C0361B00677F7A /* ViewModels */,
 				6FD6956628BED72B00677F7A /* Controllers */,
 				6FD6955528BED72A00677F7A /* Helpers */,
 				6FD6956028BED72A00677F7A /* Models */,
@@ -104,7 +129,9 @@
 		6FD6955528BED72A00677F7A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6955628BED72A00677F7A /* Configuration.swift */,
+				6FD6959A28C0375300677F7A /* Models */,
+				6FD6958C28C02ACF00677F7A /* Views */,
+				6FD6958B28C02A5C00677F7A /* Settings */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -134,7 +161,11 @@
 		6FD6955B28BED72A00677F7A /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6955C28BED72A00677F7A /* SignUpView.swift */,
+				6FD6955C28BED72A00677F7A /* SignInScreenView.swift */,
+				6FD6958328BFC5D500677F7A /* RootSignUpView.swift */,
+				6FD6958528BFC67F00677F7A /* EmailSignUpView.swift */,
+				6FD6958728BFC6A200677F7A /* CivilRegistryScreenView.swift */,
+				6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -151,7 +182,8 @@
 		6FD6956028BED72A00677F7A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6956128BED72A00677F7A /* PresentedView.swift */,
+				6FD6958F28C02D1900677F7A /* AuthViewModel.swift */,
+				6FD6959828C036A900677F7A /* NewUserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,7 +208,9 @@
 		6FD6956628BED72B00677F7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6956128BED72A00677F7A /* HomeViewController.swift */,
 				6FD6956728BED72B00677F7A /* WebViewController.swift */,
+				6FD6958928BFC73300677F7A /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,7 +218,7 @@
 		6FD6957A28BEE3BB00677F7A /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6957B28BEE3DE00677F7A /* EventsView.swift */,
+				6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -203,6 +237,40 @@
 				6FD6958128BEE4AA00677F7A /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		6FD6958B28C02A5C00677F7A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6955628BED72A00677F7A /* Configuration.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6FD6958C28C02ACF00677F7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */,
+				6FD6959328C030B200677F7A /* ItemButtonStyle.swift */,
+				6FD6959F28C0475700677F7A /* DatePickerTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6FD6959528C0361B00677F7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6959628C0364600677F7A /* CreateNewUserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6FD6959A28C0375300677F7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6959B28C0377000677F7A /* DataEncoding.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,20 +345,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD6959728C0364600677F7A /* CreateNewUserViewModel.swift in Sources */,
+				6FD6959428C030B200677F7A /* ItemButtonStyle.swift in Sources */,
+				6FD6959028C02D1900677F7A /* AuthViewModel.swift in Sources */,
 				6FD6952F28BEBE4600677F7A /* Persistence.swift in Sources */,
 				6FD6957128BED72B00677F7A /* WebViewController.swift in Sources */,
-				6FD6956E28BED72B00677F7A /* PresentedView.swift in Sources */,
+				6FD6956E28BED72B00677F7A /* HomeViewController.swift in Sources */,
+				6FD6959C28C0377000677F7A /* DataEncoding.swift in Sources */,
 				6FD6956C28BED72B00677F7A /* MenuView.swift in Sources */,
+				6FD695A028C0475700677F7A /* DatePickerTextField.swift in Sources */,
 				6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */,
 				6FD6952628BEBE4400677F7A /* MyClubAppApp.swift in Sources */,
 				6FD6956828BED72B00677F7A /* Configuration.swift in Sources */,
-				6FD6956B28BED72B00677F7A /* SignUpView.swift in Sources */,
+				6FD6956B28BED72B00677F7A /* SignInScreenView.swift in Sources */,
 				6FD6956A28BED72B00677F7A /* OnBoardingView.swift in Sources */,
+				6FD6959928C036A900677F7A /* NewUserModel.swift in Sources */,
+				6FD6958828BFC6A300677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD6958628BFC67F00677F7A /* EmailSignUpView.swift in Sources */,
+				6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */,
 				6FD6956D28BED72B00677F7A /* BaseView.swift in Sources */,
+				6FD6958E28C02AFF00677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6953228BEBE4600677F7A /* MyClubApp.xcdatamodeld in Sources */,
+				6FD6958428BFC5D500677F7A /* RootSignUpView.swift in Sources */,
 				6FD6956928BED72B00677F7A /* HomeWebView.swift in Sources */,
 				6FD6958228BEE4AA00677F7A /* ProfileView.swift in Sources */,
-				6FD6957C28BEE3DE00677F7A /* EventsView.swift in Sources */,
+				6FD6959E28C0462000677F7A /* AddressRegistryScreenView.swift in Sources */,
+				6FD6957C28BEE3DE00677F7A /* EventScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,9 @@ import SwiftUI
 struct BaseView: View {
     @State var dark = false
     @State var show = false
-    @EnvironmentObject var presentedView: PresentedView
+    @EnvironmentObject var presentedView: HomeViewController
+    @EnvironmentObject var presentedSignUpView: SignUpViewController
+    
     var body: some View {
         
         ZStack (alignment: .leading) {
@@ -45,27 +47,48 @@ extension BaseView  {
                         }
                         Spacer()
                     }
-                    Text("Accueil")
-                        .font(.system(size: 16, weight: .semibold))
+                    .disabled(self.presentedSignUpView.currentPage != .created)
+                    .opacity(self.presentedSignUpView.currentPage != .created ? 0 : 1)
+                    switch presentedView.currentView {
+                        case .home:
+                            Text("Accueil")
+                                .font(.system(size: 16, weight: .semibold))
+                        case .login:
+                            Text("Connexion")
+                                .font(.system(size: 16, weight: .semibold))
+                        case .about:
+                            Text("Accueil")
+                                .font(.system(size: 16, weight: .semibold))
+                        case .event:
+                            Text("Événements")
+                                .font(.system(size: 16, weight: .semibold))
+                        case .profile:
+                            Text("Profile")
+                                .font(.system(size: 16, weight: .semibold))
+                        case .signup:
+                            Text("Créer un compte")
+                                .font(.system(size: 16, weight: .semibold))
+                    }
                 }
                 .padding()
                 .foregroundColor(.primary)
                 .overlay(Rectangle().stroke(Color.primary.opacity(0.1), lineWidth: 1).shadow(radius: 3).edgesIgnoringSafeArea(.top))
                 
                 // Right view
-                
                 switch presentedView.currentView {
                     case .home:
                         let clubUrl: String = try! Configuration.value(for:"MY_CLUB_WEB_URL")
                         HomeWebView(url: URL(string: clubUrl)!)
-                    case .signup:
+                    case .login:
                         SignInScreenView()
                     case .about:
                         AboutView()
                     case .event:
-                        EventsView()
+                        EventScreenView()
                     case .profile:
                         ProfileView()
+                    case .signup:
+                        RootSignUpView()
                 }
             }
         }

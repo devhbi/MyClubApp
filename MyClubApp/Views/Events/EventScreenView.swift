@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EventsView: View {
+struct EventScreenView: View {
     var body: some View {
         Text("Events view")
     }
@@ -15,6 +15,6 @@ struct EventsView: View {
 
 struct EventsView_Previews: PreviewProvider {
     static var previews: some View {
-        EventsView()
+        EventScreenView()
     }
 }

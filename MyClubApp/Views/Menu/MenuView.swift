@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
     @Environment(\.colorScheme) var colorScheme
-    @EnvironmentObject var presentedView: PresentedView
+    @EnvironmentObject var presentedView: HomeViewController
     @Binding var dark:Bool
     @Binding var show:Bool
     var body: some View {
@@ -180,7 +180,7 @@ extension MenuView  {
     var AccountBarItem: some View {
         Button(action: {
             withAnimation(.default) {
-                self.presentedView.currentView = .signup
+                self.presentedView.currentView = .login
             }
         }){
             HStack(spacing: 22) {

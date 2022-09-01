@@ -1,7 +1,7 @@
 //
-//  SignUpView.swift
+//  SignInScreenView.swift
 //  MyClubApp
-//
+//  
 //  Created by Honoré BIZAGWIRA on 31/08/2022.
 //
 
@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct SignInScreenView: View {
+    @EnvironmentObject var presentedView: HomeViewController
     @State private var email: String = "" // by default it's empty
     @State private var password: String = "" // by default it's empty
     var body: some View {
@@ -63,13 +64,20 @@ struct SignInScreenView: View {
                         Text("Mot de passe oublié?")
                             .foregroundColor(Color("PrimaryColor"))
                         Spacer()
-                        Text("Créer un compte")
-                            .foregroundColor(Color("PrimaryColor"))
+                        
+                        Button(action: {
+                            print("Créer un compte pressed")
+                            withAnimation(.default) {
+                                self.presentedView.currentView = .signup
+                            }
+                        }){
+                            Text("Créer un compte")
+                                .foregroundColor(Color("PrimaryColor"))
+                        }
                     }
                     .padding(.vertical, 12)
                     
                     LoginButton(title: "Je m'identifier")
-                    
                 }
                 
                 Spacer()
@@ -131,12 +139,16 @@ struct PrimaryButton: View {
 struct LoginButton: View {
     var title: String
     var body: some View {
-        Text(title)
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-            .frame(height: 50)
-            .foregroundColor(.white)
-            .font(.system(size: 18, weight: .bold))
-            .background(LinearGradient(colors: [Color.gray, Color.blue], startPoint: .leading, endPoint: .trailing))
-            .cornerRadius(5)
+        Button(action: {
+            print("Login Button tapped")
+        }) {
+            Text(title)
+                .font(.system(size: 18, weight: .bold))
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+        .frame(height: 50)
+        .foregroundColor(.white)
+        .background(LinearGradient(colors: [Color.gray, Color.blue], startPoint: .leading, endPoint: .trailing))
+        .cornerRadius(5)
     }
 }
