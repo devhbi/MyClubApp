@@ -48,6 +48,8 @@ struct MenuView: View {
                 Spacer()
                 
                 AboutMenuSection
+                    .disabled(self.authSession.currentLoginState != .login)
+                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
             }
             
             Spacer()
@@ -177,67 +179,66 @@ extension MenuView  {
                 .padding(.leading)
                 .padding(.vertical, -18)
             
-            Button(action: {
-                withAnimation(.default) {
-                    self.presentedView.currentView = .login
-                    self.show.toggle()
-                }
-            }){
-                HStack(spacing: 22) {
-                    Image(systemName: "lock.open")                    .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 22, height: 22)
-                    Text("Connexion")
-                        .font(.system(size: 14, weight: .semibold))
-                    Spacer()
-                }
-            }
-            .disabled(self.authSession.currentLoginState == .login)
-            .opacity(self.authSession.currentLoginState == .login ? 0 : 1)
-            .padding(.top, 8)
-            
-            
-            Button(action: {
-                withAnimation(.default) {
-                    self.presentedView.currentView = .login
-                }
-            }){
-                HStack(spacing: 22) {
-                    Image(systemName: "person.circle")                    .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 22, height: 22)
-                    Text("Mon compte")
-                        .font(.system(size: 14, weight: .semibold))
-                    Spacer()
+            if self.authSession.currentLoginState != .login {
+                Button(action: {
+                    withAnimation(.default) {
+                        self.presentedView.currentView = .login
+                        self.show.toggle()
+                    }
+                }){
+                    HStack(spacing: 22) {
+                        Image(systemName: "lock.open")                    .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 22, height: 22)
+                        Text("Connexion")
+                            .font(.system(size: 14, weight: .semibold))
+                        Spacer()
+                    }
                 }
             }
-            .disabled(self.authSession.currentLoginState != .login)
-            .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
-            .padding(.top, 8)
-            
-            Button(action: {
-                withAnimation(.default) {
-                    self.authSession.signOutUser()
-                    self.show.toggle()
-                    self.presentedView.currentView = .login
-                    self.authSession.currentLoginState = .none
+            else {
+                Button(action: {
+                    withAnimation(.default) {
+                        self.presentedView.currentView = .login
+                    }
+                }){
+                    HStack(spacing: 22) {
+                        Image(systemName: "person.circle")                    .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 22, height: 22)
+                        Text("Mon compte")
+                            .font(.system(size: 14, weight: .semibold))
+                        Spacer()
+                    }
                 }
-            }){
-                HStack(spacing: 22) {
-                    Image(systemName: "rectangle.portrait.and.arrow.right")  .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 22, height: 22)
-                    Text("Déconnexion")
-                        .font(.system(size: 14, weight: .semibold))
-                    Spacer()
+                .disabled(self.authSession.currentLoginState != .login)
+                .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                .padding(.top, 8)
+                
+                Button(action: {
+                    withAnimation(.default) {
+                        self.authSession.signOutUser()
+                        self.show.toggle()
+                        self.presentedView.currentView = .login
+                        self.authSession.currentLoginState = .none
+                    }
+                }){
+                    HStack(spacing: 22) {
+                        Image(systemName: "rectangle.portrait.and.arrow.right")  .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 22, height: 22)
+                        Text("Déconnexion")
+                            .font(.system(size: 14, weight: .semibold))
+                        Spacer()
+                    }
                 }
+                .disabled(self.authSession.currentLoginState != .login)
+                .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                .padding(.top, 8)
             }
-            .disabled(self.authSession.currentLoginState != .login)
-            .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
-            .padding(.top, 8)
         }
     }
 }
