@@ -2,29 +2,47 @@
 //  CreateNewUserViewModel.swift
 //  MyClubApp
 //
-//  Created by Pole Star on 01/09/2022.
+//  Created by Honoré BIZAGWIRA on 01/09/2022.
 //
 
 import Foundation
+import Firebase
 
 final class CreateNewUserViewModel: ObservableObject {
-    @Published var newUserModel: NewUserModel = .empty
-    @Published var results = [NewUserModel]()
+    @Published var member: Member = .empty
+    @Published var results = [Member]()
+    
+    private lazy var databasePath: DatabaseReference? = {
+        let dbname: String = try! Configuration.value(for:"MY_CLUB_DATABASE_NAME")
+        let ref = Database.database()
+            .reference()
+            .child(dbname)
+            .child("users")
+        return ref
+    }()
+    
+    var isValide: Bool {
+        !self.member.firstname.isEmpty &&
+        !self.member.lastname.isEmpty &&
+        !self.member.password.isEmpty &&
+        !self.member.city.isEmpty &&
+        !self.member.street.isEmpty
+    }
 }
 
 extension CreateNewUserViewModel {
     
     // MARK: Validations Functions
     func passwordsMatch() -> Bool {
-        return (self.newUserModel.password == self.newUserModel.repassword)
+        return (self.member.password == self.member.repassword)
     }
     
     func isPasswordValid() -> Bool {
-        return AuthViewModel.isPasswordValid(password: self.newUserModel.password)
+        return AuthViewModel.isPasswordValid(password: self.member.password)
     }
     
     func isRePasswordValid() -> Bool {
-        return AuthViewModel.isPasswordValid(password: self.newUserModel.repassword)
+        return AuthViewModel.isPasswordValid(password: self.member.repassword)
     }
     
     func isEmailValid() -> Bool {
@@ -32,7 +50,7 @@ extension CreateNewUserViewModel {
         //        Passwords to a length of 8 to 20 aplhanumeric characters and select special characters. The password also can not start with a digit, underscore or special character and must contain at least one digit.
         let emailTest = NSPredicate(format: "SELF MATCHES %@", "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$")
         
-        return emailTest.evaluate(with: self.newUserModel.email)
+        return emailTest.evaluate(with: self.member.email)
     }
     
     func isPhoneValid() -> Bool {
@@ -40,7 +58,7 @@ extension CreateNewUserViewModel {
         // Regex for French telephone numbers.
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", "^((\\+|00)33|0)*[1-9]([.-]*[0-9]{2}){4}$")
         
-        return phoneTest.evaluate(with: self.newUserModel.phone)
+        return phoneTest.evaluate(with: self.member.phone)
     }
     
     func isPostalCodeValid() -> Bool {
@@ -48,26 +66,26 @@ extension CreateNewUserViewModel {
         // Regex for French zip code.
         let postalCodeTest = NSPredicate(format: "SELF MATCHES %@", "^(([0-8][0-9])|(9[0-5])|(2[ab]))[0-9]{3}$")
         
-        return postalCodeTest.evaluate(with: self.newUserModel.zipcode)
+        return postalCodeTest.evaluate(with: self.member.zipcode)
     }
     
     func isBirthDateValid() -> Bool {
-        if self.newUserModel.birthDate == nil {
+        if self.member.birthDate == nil {
             return false
         }
         
         let today = Date()
-        let seconds = today - (self.newUserModel.birthDate ?? Date())
+        let seconds = today - (self.member.birthDate ?? Date())
         
         return seconds.asYears() > 13
     }
     
     func isFirstNameValid() -> Bool {
-        return AuthViewModel.isNameValid(name: self.newUserModel.firstname)
+        return AuthViewModel.isNameValid(name: self.member.firstname)
     }
     
     func isLastNameValid() -> Bool {
-        return AuthViewModel.isNameValid(name: self.newUserModel.lastname)
+        return AuthViewModel.isNameValid(name: self.member.lastname)
     }
     
     static func isNameValid(name: String) -> Bool {

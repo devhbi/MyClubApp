@@ -27,21 +27,21 @@ struct AddressRegistryScreenView: View {
                     
                     VStack(spacing: 18) {
                         
-                        TextField ("Rue", text: self.$vm.newUserModel.street)
+                        TextField ("Rue", text: self.$vm.member.street)
                             .font(.system(size: 14))
                             .padding(12)
                             .overlay(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(UIColor.label), lineWidth: 1))
                             .autocapitalization(.none)
                         
-                        EntryTextFieldView(sfSymbolName: "archivebox", placeHolder: "Code postale", promptText: self.vm.postalCodePrompt, field: self.$vm.newUserModel.zipcode)
+                        EntryTextFieldView(sfSymbolName: "archivebox", placeHolder: "Code postale", promptText: self.vm.postalCodePrompt, field: self.$vm.member.zipcode)
                         
-                        TextField ("Ville", text: self.$vm.newUserModel.city)
+                        TextField ("Ville", text: self.$vm.member.city)
                             .font(.system(size: 14))
                             .padding(12)
                             .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(UIColor.label), lineWidth: 1))
                             .autocapitalization(.none)
                         
-                        EntryTextFieldView(sfSymbolName: "phone", placeHolder: "Phone", promptText: self.vm.phonePrompt, field: self.$vm.newUserModel.phone)
+                        EntryTextFieldView(sfSymbolName: "phone", placeHolder: "Phone", promptText: self.vm.phonePrompt, field: self.$vm.member.phone)
                         
                       
                     }

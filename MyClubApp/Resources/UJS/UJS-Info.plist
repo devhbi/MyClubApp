@@ -6,6 +6,8 @@
 	<string>UJS Toulouse</string>
 	<key>MY_CLUB_WEB_URL</key>
 	<string>https://ujs-toulouse.com</string>
+	<key>MY_CLUB_DATABASE_NAME</key>
+	<string>UJS TOULOUSE</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

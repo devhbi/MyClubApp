@@ -24,9 +24,9 @@ struct EmailSignUpView: View {
                         .foregroundColor(Color.gray)
                     
                     VStack(spacing: 18) {
-                        EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Mail", promptText: self.vm.emailPrompt, field: self.$vm.newUserModel.email)
-                        EntryTextFieldView(sfSymbolName: "key", placeHolder: "Mot de passe", promptText: self.vm.passwordPrompt, isSecure: true, field: self.$vm.newUserModel.password)
-                        EntryTextFieldView(sfSymbolName: "key", placeHolder: "Mot de passe", promptText: self.vm.confirmPwPrompt, isSecure: true, field: self.$vm.newUserModel.repassword)
+                        EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Mail", promptText: self.vm.emailPrompt, field: self.$vm.member.email)
+                        EntryTextFieldView(sfSymbolName: "key", placeHolder: "Mot de passe", promptText: self.vm.passwordPrompt, isSecure: true, field: self.$vm.member.password)
+                        EntryTextFieldView(sfSymbolName: "key", placeHolder: "Mot de passe", promptText: self.vm.confirmPwPrompt, isSecure: true, field: self.$vm.member.repassword)
                         
                     }
                     .padding(.vertical, 16)

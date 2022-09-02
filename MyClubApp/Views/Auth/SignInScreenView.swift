@@ -46,10 +46,10 @@ struct SignInScreenView: View {
                     Text("ou avec votre compte")
                         .foregroundColor(Color.black.opacity(0.4))
                     
-                    EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Email address", promptText: self.userVM.emailPrompt, field: self.$userVM.newUserModel.email)
-                        .onAppear {self.userVM.newUserModel.email = "hbi.test@gmail.com"}
-                    EntryTextFieldView(sfSymbolName: "key", placeHolder: "Password", promptText: "", isSecure: true, field: self.$userVM.newUserModel.password)
-                        .onAppear {self.userVM.newUserModel.password = "hbixDev0"}
+                    EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Email address", promptText: self.userVM.emailPrompt, field: self.$userVM.member.email)
+                        .onAppear {self.userVM.member.email = "hbi.test@gmail.com"}
+                    EntryTextFieldView(sfSymbolName: "key", placeHolder: "Password", promptText: "", isSecure: true, field: self.$userVM.member.password)
+                        .onAppear {self.userVM.member.password = "hbixDev0"}
                    
                     HStack {
                         Button(action: {
@@ -143,7 +143,7 @@ struct PrimaryButton: View {
 extension SignInScreenView  {
     var LoginButton : some View {
         Button(action: {
-            authSession.signIn(email: self.userVM.newUserModel.email, password: self.userVM.newUserModel.password){(result, error) in
+            authSession.signIn(email: self.userVM.member.email, password: self.userVM.member.password){(result, error) in
                 if let error = error {
                     print("Failed \(error.localizedDescription)")
                 }

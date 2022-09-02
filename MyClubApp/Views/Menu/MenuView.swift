@@ -129,6 +129,7 @@ extension MenuView  {
             Button(action: {
                 withAnimation(.default) {
                     self.presentedView.currentView = .home
+                    self.show.toggle()
                 }
             }){
                 HStack(spacing: 22) {
@@ -147,6 +148,7 @@ extension MenuView  {
             Button(action: {
                 withAnimation(.default) {
                     self.presentedView.currentView = .event
+                    self.show.toggle()
                 }
             }){
                 HStack(spacing: 22) {
@@ -200,7 +202,8 @@ extension MenuView  {
             else {
                 Button(action: {
                     withAnimation(.default) {
-                        self.presentedView.currentView = .login
+                        self.presentedView.currentView = .account
+                        self.show.toggle()
                     }
                 }){
                     HStack(spacing: 22) {
@@ -260,6 +263,7 @@ extension MenuView  {
             Button(action: {
                 withAnimation(.default) {
                     self.presentedView.currentView = .users
+                    self.show.toggle()
                 }
             }){
                 HStack(spacing: 22) {

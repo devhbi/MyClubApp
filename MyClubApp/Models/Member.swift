@@ -1,5 +1,5 @@
 //
-//  NewUserModel.swift
+//  Member.swift
 //  MyClubApp
 //
 //  Created by Honoré BIZAGWIRA on 01/09/2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NewUserModel: Codable, Identifiable, Hashable {
+struct Member: Codable, Identifiable, Hashable {
     var id: String = UUID().uuidString
     var firstname: String
     var lastname: String
@@ -81,13 +81,13 @@ struct NewUserModel: Codable, Identifiable, Hashable {
      }
 }
 
-extension NewUserModel {
-    static var empty: NewUserModel {
-        return NewUserModel(firstname: "", lastname: "", email: "", password: "", birthDate: Date.now, city: "", zipcode: "", street: "", globalAdmin: "inactif", admin: "inactif", superuser: "inactif", userType: "inactif", phone: "")
+extension Member {
+    static var empty: Member {
+        return Member(firstname: "", lastname: "", email: "", password: "", birthDate: Date.now, city: "", zipcode: "", street: "", globalAdmin: "inactif", admin: "inactif", superuser: "inactif", userType: "inactif", phone: "")
     }
 }
 
-extension NewUserModel {
+extension Member {
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(firstname, forKey: .firstname)
@@ -107,7 +107,7 @@ extension NewUserModel {
 }
 
 
-extension NewUserModel {
+extension Member {
     var fullname: String {
         return "\(self.firstname) \(self.lastname)"
     }
@@ -127,7 +127,7 @@ extension NewUserModel {
     
 }
 
-extension NewUserModel {
+extension Member {
     var isSuperAdministrator: Bool {
         get {
             return self.superuser == "actif"

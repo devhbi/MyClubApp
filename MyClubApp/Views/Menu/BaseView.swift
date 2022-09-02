@@ -77,8 +77,8 @@ extension BaseView  {
                     case .event:
                         Text("Événements")
                             .font(.system(size: 16, weight: .semibold))
-                    case .profile:
-                        Text("Profile")
+                    case .account:
+                        Text("Compte")
                             .font(.system(size: 16, weight: .semibold))
                     case .users:
                         Text("Membres")
@@ -113,8 +113,8 @@ extension BaseView  {
                         AboutView()
                     case .event:
                         EventScreenView()
-                    case .profile:
-                        ProfileView()
+                    case .account:
+                        AccountScreenView()
                     case .users:
                         UserListScreenView()
                     case .signup:

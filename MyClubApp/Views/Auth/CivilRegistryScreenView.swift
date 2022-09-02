@@ -24,9 +24,9 @@ struct CivilRegistryScreenView: View {
                             .foregroundColor(Color.gray)
                         
                         VStack(spacing: 18) {
-                            EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Prénom", promptText: self.vm.fistNamePrompt, field: self.$vm.newUserModel.firstname)
-                            EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Nom", promptText: self.vm.lastNamePrompt, field: self.$vm.newUserModel.lastname)
-                            EntryDateFieldView(sfSymbolName: "calendar", placeHolder: "Date naissance", promptText: self.vm.birthDatePrompt, field: self.$vm.newUserModel.birthDate)
+                            EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Prénom", promptText: self.vm.fistNamePrompt, field: self.$vm.member.firstname)
+                            EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Nom", promptText: self.vm.lastNamePrompt, field: self.$vm.member.lastname)
+                            EntryDateFieldView(sfSymbolName: "calendar", placeHolder: "Date naissance", promptText: self.vm.birthDatePrompt, field: self.$vm.member.birthDate)
                         }
                         .padding(.vertical, 16)
                         Button(action: {

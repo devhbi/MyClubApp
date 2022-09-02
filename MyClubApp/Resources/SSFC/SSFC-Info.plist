@@ -6,6 +6,8 @@
 	<string>SSFC</string>
 	<key>MY_CLUB_WEB_URL</key>
 	<string>https://ssfc.fr</string>
+	<key>MY_CLUB_DATABASE_NAME</key>
+	<string>UJS TOULOUSE</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
