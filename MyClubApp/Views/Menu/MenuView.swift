@@ -10,12 +10,13 @@ import SwiftUI
 struct MenuView: View {
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var presentedView: HomeViewController
+    @EnvironmentObject var authSession: LoginSessionController
     @Binding var dark:Bool
     @Binding var show:Bool
     var body: some View {
         VStack {
-            //MenuHeaderButton
             HeaderBar
+            
             Image("logo")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -29,42 +30,24 @@ struct MenuView: View {
             }
             .padding(.top, 25)
             
-            Divider()
-                .padding(.top, 16)
             
-            DisplayModeBar
+//            DisplayModeBar
             
             Group {
 
-                HomeBarItem
+                HomeMenuSection
+                    .disabled(self.authSession.currentLoginState != .login)
+                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
                 
-                EventBarItem
+                AccountMenuSection
                 
-                Divider()
-                    .padding(.top, 16)
-                
-                Text("Profil")
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundColor(Color.gray.opacity(0.5))
-                    .padding()
-                    .padding(.leading)
-                    .padding(.vertical, -18)
-                AccountBarItem
-                
-                LogOutBarItem
+                UserMenuSection
+                    .disabled(self.authSession.currentLoginState != .login)
+                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
                 
                 Spacer()
-                Divider()
-                    .padding(.top, 16)
-                Text("Plus")
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundColor(Color.gray.opacity(0.5))
-                    .padding()
-                    .padding(.leading)
-                    .padding(.vertical, -18)
-                AboutBarItem
+                
+                AboutMenuSection
             }
             
             Spacer()
@@ -133,108 +116,195 @@ extension MenuView  {
     }
 }
 
+
+
 extension MenuView  {
 
-    var HomeBarItem: some View {
-        Button(action: {
-            withAnimation(.default) {
-                self.presentedView.currentView = .home
+    var HomeMenuSection: some View {
+        VStack {
+            Divider()
+                .padding(.top, 8)
+            Button(action: {
+                withAnimation(.default) {
+                    self.presentedView.currentView = .home
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "house")
+                        .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 22, height: 22)
+                    Text("Accueil")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
             }
-        }){
-            HStack(spacing: 22) {
-                Image(systemName: "house")
-                    .resizable()
-                    .frame(width: 22, height: 22)
-                Text("Accueil")
-                    .font(.system(size: 14, weight: .semibold))
-                Spacer()
+            .padding(.top, 8)
+            
+            Button(action: {
+                withAnimation(.default) {
+                    self.presentedView.currentView = .event
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "calendar")
+                        .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 22, height: 22)
+                    Text("Événements")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
             }
+            .padding(.top, 8)
         }
-        .padding(.top, 16)
     }
 }
 
 extension MenuView  {
 
-    var EventBarItem: some View {
-        Button(action: {
-            withAnimation(.default) {
-                self.presentedView.currentView = .event
+    var AccountMenuSection: some View {
+        VStack {
+            Divider()
+                .padding(.top, 8)
+            Text("Profil")
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(Color.gray.opacity(0.5))
+                .padding()
+                .padding(.leading)
+                .padding(.vertical, -18)
+            
+            Button(action: {
+                withAnimation(.default) {
+                    self.presentedView.currentView = .login
+                    self.show.toggle()
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "lock.open")                    .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 22, height: 22)
+                    Text("Connexion")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
             }
-        }){
-            HStack(spacing: 22) {
-                Image(systemName: "calendar")
-                    .resizable()
-                    .frame(width: 22, height: 22)
-                Text("Événements")
-                    .font(.system(size: 14, weight: .semibold))
-                Spacer()
+            .disabled(self.authSession.currentLoginState == .login)
+            .opacity(self.authSession.currentLoginState == .login ? 0 : 1)
+            .padding(.top, 8)
+            
+            
+            Button(action: {
+                withAnimation(.default) {
+                    self.presentedView.currentView = .login
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "person.circle")                    .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 22, height: 22)
+                    Text("Mon compte")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
             }
+            .disabled(self.authSession.currentLoginState != .login)
+            .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+            .padding(.top, 8)
+            
+            Button(action: {
+                withAnimation(.default) {
+                    self.authSession.signOutUser()
+                    self.show.toggle()
+                    self.presentedView.currentView = .login
+                    self.authSession.currentLoginState = .none
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "rectangle.portrait.and.arrow.right")  .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 22, height: 22)
+                    Text("Déconnexion")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
+            }
+            .disabled(self.authSession.currentLoginState != .login)
+            .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+            .padding(.top, 8)
         }
-        .padding(.top, 16)
     }
 }
 
 extension MenuView  {
 
-    var AccountBarItem: some View {
-        Button(action: {
-            withAnimation(.default) {
-                self.presentedView.currentView = .login
-            }
-        }){
-            HStack(spacing: 22) {
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .frame(width: 22, height: 22)
-                Text("Mon compte")
-                    .font(.system(size: 14, weight: .semibold))
-                Spacer()
+    var UserMenuSection: some View {
+        VStack {
+            Divider()
+                .padding(.top, 8)
+            Text("Gestion")
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(Color.gray.opacity(0.5))
+                .padding()
+                .padding(.leading)
+                .padding(.vertical, -18)
+            
+            Button(action: {
+                withAnimation(.default) {
+                    self.presentedView.currentView = .users
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "laptopcomputer")                    .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 22, height: 22)
+                    Text("Administrateur")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
             }
         }
-        .padding(.top, 16)
     }
 }
 
-extension MenuView  {
-
-    var LogOutBarItem: some View {
-        Button(action: {
-            withAnimation(.default) {
-                self.presentedView.currentView = .home
-            }
-        }){
-            HStack(spacing: 22) {
-                Image(systemName: "rectangle.portrait.and.arrow.right")
-                    .resizable()
-                    .frame(width: 22, height: 22)
-                Text("Déconnexion")
-                    .font(.system(size: 14, weight: .semibold))
-                Spacer()
-            }
-        }
-        .padding(.top, 16)
-    }
-}
 
 extension MenuView  {
 
-    var AboutBarItem: some View {
-        Button(action: {
-            withAnimation(.default) {
-                self.presentedView.currentView = .about
+    var AboutMenuSection: some View {
+        VStack {
+            Divider()
+                .padding(.top, 8)
+            Text("Plus")
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(Color.gray.opacity(0.5))
+                .padding()
+                .padding(.leading)
+                .padding(.vertical, -18)
+            Button(action: {
+                withAnimation(.default) {
+                    self.presentedView.currentView = .about
+                }
+            }){
+                HStack(spacing: 22) {
+                    Image(systemName: "exclamationmark.circle.fill")
+                        .resizable()
+                        .frame(width: 22, height: 22)
+                    Text("À propos")
+                        .font(.system(size: 14, weight: .semibold))
+                    Spacer()
+                }
             }
-        }){
-            HStack(spacing: 22) {
-                Image(systemName: "exclamationmark.circle.fill")
-                    .resizable()
-                    .frame(width: 22, height: 22)
-                Text("À propos")
-                    .font(.system(size: 14, weight: .semibold))
-                Spacer()
-            }
+            .padding(.top, 8)
         }
-        .padding(.top, 16)
     }
 }
 /*

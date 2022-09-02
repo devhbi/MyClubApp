@@ -10,7 +10,7 @@ import Foundation
 
 class HomeViewController: ObservableObject {
     enum AvailableViews {
-        case home, signup, login, about, event, profile
+        case home, login, about, event, profile, users, signup
     }
-    @Published var currentView: AvailableViews = .signup
+    @Published var currentView: AvailableViews = .login
 }

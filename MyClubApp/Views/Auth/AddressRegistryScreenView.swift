@@ -49,7 +49,6 @@ struct AddressRegistryScreenView: View {
                     Button(action: {
                         print("Créer le compte avec un mail")
                         withAnimation {
-                            self.presentedSignUpView.currentPage = .created
                             self.presentedView.currentView = .home
                             
                         }

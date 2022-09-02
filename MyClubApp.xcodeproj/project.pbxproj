@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C509521120B520F644030AC /* Pods_UJS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A088568CC0FB4680155649E /* Pods_UJS.framework */; };
+		27E77ED5CB47BC13B6ACCF8A /* Pods_SSFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4009D293F1B1E0F27035E04C /* Pods_SSFC.framework */; };
+		4B6D95F12FB14DC18EDEE028 /* Pods_FCEBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */; };
 		6FD6952628BEBE4400677F7A /* MyClubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */; };
 		6FD6952A28BEBE4600677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
 		6FD6952D28BEBE4600677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
@@ -21,7 +24,7 @@
 		6FD6956E28BED72B00677F7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956128BED72A00677F7A /* HomeViewController.swift */; };
 		6FD6956F28BED72B00677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6956428BED72B00677F7A /* Assets.xcassets */; };
 		6FD6957128BED72B00677F7A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956728BED72B00677F7A /* WebViewController.swift */; };
-		6FD6957928BEDB9800677F7A /* FCEBM-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6957828BEDB9800677F7A /* FCEBM-Info.plist */; };
+		6FD6957928BEDB9800677F7A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6957828BEDB9800677F7A /* Info.plist */; };
 		6FD6957C28BEE3DE00677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
 		6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957E28BEE41D00677F7A /* AboutView.swift */; };
 		6FD6958228BEE4AA00677F7A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* ProfileView.swift */; };
@@ -37,9 +40,138 @@
 		6FD6959C28C0377000677F7A /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959B28C0377000677F7A /* DataEncoding.swift */; };
 		6FD6959E28C0462000677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
 		6FD695A028C0475700677F7A /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959F28C0475700677F7A /* DatePickerTextField.swift */; };
+		6FD695A328C12CA800677F7A /* CreateNewUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959628C0364600677F7A /* CreateNewUserViewModel.swift */; };
+		6FD695A428C12CA800677F7A /* ItemButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959328C030B200677F7A /* ItemButtonStyle.swift */; };
+		6FD695A528C12CA800677F7A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958F28C02D1900677F7A /* AuthViewModel.swift */; };
+		6FD695A628C12CA800677F7A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952E28BEBE4600677F7A /* Persistence.swift */; };
+		6FD695A728C12CA800677F7A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956728BED72B00677F7A /* WebViewController.swift */; };
+		6FD695A828C12CA800677F7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956128BED72A00677F7A /* HomeViewController.swift */; };
+		6FD695A928C12CA800677F7A /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959B28C0377000677F7A /* DataEncoding.swift */; };
+		6FD695AA28C12CA800677F7A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955E28BED72A00677F7A /* MenuView.swift */; };
+		6FD695AB28C12CA800677F7A /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959F28C0475700677F7A /* DatePickerTextField.swift */; };
+		6FD695AC28C12CA800677F7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957E28BEE41D00677F7A /* AboutView.swift */; };
+		6FD695AD28C12CA800677F7A /* MyClubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */; };
+		6FD695AE28C12CA800677F7A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955628BED72A00677F7A /* Configuration.swift */; };
+		6FD695AF28C12CA800677F7A /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955C28BED72A00677F7A /* SignInScreenView.swift */; };
+		6FD695B028C12CA800677F7A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955A28BED72A00677F7A /* OnBoardingView.swift */; };
+		6FD695B128C12CA800677F7A /* NewUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959828C036A900677F7A /* NewUserModel.swift */; };
+		6FD695B228C12CA800677F7A /* CivilRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958728BFC6A200677F7A /* CivilRegistryScreenView.swift */; };
+		6FD695B328C12CA800677F7A /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958528BFC67F00677F7A /* EmailSignUpView.swift */; };
+		6FD695B428C12CA800677F7A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958928BFC73300677F7A /* SignUpViewController.swift */; };
+		6FD695B528C12CA800677F7A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955F28BED72A00677F7A /* BaseView.swift */; };
+		6FD695B628C12CA800677F7A /* EntryTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */; };
+		6FD695B728C12CA800677F7A /* MyClubApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6953028BEBE4600677F7A /* MyClubApp.xcdatamodeld */; };
+		6FD695B828C12CA800677F7A /* RootSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958328BFC5D500677F7A /* RootSignUpView.swift */; };
+		6FD695B928C12CA800677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
+		6FD695BA28C12CA800677F7A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* ProfileView.swift */; };
+		6FD695BB28C12CA800677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
+		6FD695BC28C12CA800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD695C028C12CA800677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
+		6FD695C128C12CA800677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6956428BED72B00677F7A /* Assets.xcassets */; };
+		6FD695C228C12CA800677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
+		6FD695F128C1302600677F7A /* CreateNewUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959628C0364600677F7A /* CreateNewUserViewModel.swift */; };
+		6FD695F228C1302600677F7A /* ItemButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959328C030B200677F7A /* ItemButtonStyle.swift */; };
+		6FD695F328C1302600677F7A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958F28C02D1900677F7A /* AuthViewModel.swift */; };
+		6FD695F428C1302600677F7A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952E28BEBE4600677F7A /* Persistence.swift */; };
+		6FD695F528C1302600677F7A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956728BED72B00677F7A /* WebViewController.swift */; };
+		6FD695F628C1302600677F7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956128BED72A00677F7A /* HomeViewController.swift */; };
+		6FD695F728C1302600677F7A /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959B28C0377000677F7A /* DataEncoding.swift */; };
+		6FD695F828C1302600677F7A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955E28BED72A00677F7A /* MenuView.swift */; };
+		6FD695F928C1302600677F7A /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959F28C0475700677F7A /* DatePickerTextField.swift */; };
+		6FD695FA28C1302600677F7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957E28BEE41D00677F7A /* AboutView.swift */; };
+		6FD695FB28C1302600677F7A /* MyClubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */; };
+		6FD695FC28C1302600677F7A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955628BED72A00677F7A /* Configuration.swift */; };
+		6FD695FD28C1302600677F7A /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955C28BED72A00677F7A /* SignInScreenView.swift */; };
+		6FD695FE28C1302600677F7A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955A28BED72A00677F7A /* OnBoardingView.swift */; };
+		6FD695FF28C1302600677F7A /* NewUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959828C036A900677F7A /* NewUserModel.swift */; };
+		6FD6960028C1302600677F7A /* CivilRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958728BFC6A200677F7A /* CivilRegistryScreenView.swift */; };
+		6FD6960128C1302600677F7A /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958528BFC67F00677F7A /* EmailSignUpView.swift */; };
+		6FD6960228C1302600677F7A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958928BFC73300677F7A /* SignUpViewController.swift */; };
+		6FD6960328C1302600677F7A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955F28BED72A00677F7A /* BaseView.swift */; };
+		6FD6960428C1302600677F7A /* EntryTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */; };
+		6FD6960528C1302600677F7A /* MyClubApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6953028BEBE4600677F7A /* MyClubApp.xcdatamodeld */; };
+		6FD6960628C1302600677F7A /* RootSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958328BFC5D500677F7A /* RootSignUpView.swift */; };
+		6FD6960728C1302600677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
+		6FD6960828C1302600677F7A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* ProfileView.swift */; };
+		6FD6960928C1302600677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
+		6FD6960A28C1302600677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD6960E28C1302600677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
+		6FD6961028C1302600677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
+		6FD6961728C1318700677F7A /* FCEBM-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6961628C1318700677F7A /* FCEBM-Info.plist */; };
+		6FD6961928C1319C00677F7A /* UJS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6961828C1319C00677F7A /* UJS-Info.plist */; };
+		6FD6961C28C131C800677F7A /* CreateNewUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959628C0364600677F7A /* CreateNewUserViewModel.swift */; };
+		6FD6961D28C131C800677F7A /* ItemButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959328C030B200677F7A /* ItemButtonStyle.swift */; };
+		6FD6961E28C131C800677F7A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958F28C02D1900677F7A /* AuthViewModel.swift */; };
+		6FD6961F28C131C800677F7A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952E28BEBE4600677F7A /* Persistence.swift */; };
+		6FD6962028C131C800677F7A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956728BED72B00677F7A /* WebViewController.swift */; };
+		6FD6962128C131C800677F7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956128BED72A00677F7A /* HomeViewController.swift */; };
+		6FD6962228C131C800677F7A /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959B28C0377000677F7A /* DataEncoding.swift */; };
+		6FD6962328C131C800677F7A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955E28BED72A00677F7A /* MenuView.swift */; };
+		6FD6962428C131C800677F7A /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959F28C0475700677F7A /* DatePickerTextField.swift */; };
+		6FD6962528C131C800677F7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957E28BEE41D00677F7A /* AboutView.swift */; };
+		6FD6962628C131C800677F7A /* MyClubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */; };
+		6FD6962728C131C800677F7A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955628BED72A00677F7A /* Configuration.swift */; };
+		6FD6962828C131C800677F7A /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955C28BED72A00677F7A /* SignInScreenView.swift */; };
+		6FD6962928C131C800677F7A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955A28BED72A00677F7A /* OnBoardingView.swift */; };
+		6FD6962A28C131C800677F7A /* NewUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959828C036A900677F7A /* NewUserModel.swift */; };
+		6FD6962B28C131C800677F7A /* CivilRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958728BFC6A200677F7A /* CivilRegistryScreenView.swift */; };
+		6FD6962C28C131C800677F7A /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958528BFC67F00677F7A /* EmailSignUpView.swift */; };
+		6FD6962D28C131C800677F7A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958928BFC73300677F7A /* SignUpViewController.swift */; };
+		6FD6962E28C131C800677F7A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955F28BED72A00677F7A /* BaseView.swift */; };
+		6FD6962F28C131C800677F7A /* EntryTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */; };
+		6FD6963028C131C800677F7A /* MyClubApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6953028BEBE4600677F7A /* MyClubApp.xcdatamodeld */; };
+		6FD6963128C131C800677F7A /* RootSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958328BFC5D500677F7A /* RootSignUpView.swift */; };
+		6FD6963228C131C800677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
+		6FD6963328C131C800677F7A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* ProfileView.swift */; };
+		6FD6963428C131C800677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
+		6FD6963528C131C800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD6963928C131C800677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
+		6FD6963B28C131C800677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
+		6FD6964328C1322A00677F7A /* SSFC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964228C1322A00677F7A /* SSFC-Info.plist */; };
+		6FD6964728C1332000677F7A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964528C1331F00677F7A /* about.html */; };
+		6FD6964828C1332000677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964628C1332000677F7A /* Assets.xcassets */; };
+		6FD6964B28C1333D00677F7A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964A28C1333D00677F7A /* about.html */; };
+		6FD6964C28C1333D00677F7A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964A28C1333D00677F7A /* about.html */; };
+		6FD6965028C1334B00677F7A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964E28C1334B00677F7A /* about.html */; };
+		6FD6965128C1334B00677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964F28C1334B00677F7A /* Assets.xcassets */; };
+		6FD6965328C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
+		6FD6965428C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
+		6FD6965528C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
+		6FD6965628C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
+		6FD6965828C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
+		6FD6965928C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
+		6FD6965A28C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
+		6FD6965B28C1516E00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
+		6FD6965D28C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
+		6FD6965E28C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
+		6FD6965F28C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
+		6FD6966028C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
+		6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
+		6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
+		6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
+		6FD6966528C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
+		6FD6966928C16C6800677F7A /* UserListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966828C16C6700677F7A /* UserListScreenView.swift */; };
+		6FD6966A28C16C6800677F7A /* UserListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966828C16C6700677F7A /* UserListScreenView.swift */; };
+		6FD6966B28C16C6800677F7A /* UserListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966828C16C6700677F7A /* UserListScreenView.swift */; };
+		6FD6966C28C16C6800677F7A /* UserListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966828C16C6700677F7A /* UserListScreenView.swift */; };
+		6FD6966E28C17AB900677F7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */; };
+		6FD6966F28C17AB900677F7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */; };
+		6FD6967028C17AB900677F7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */; };
+		6FD6967128C17AB900677F7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */; };
+		6FD6967328C17EF900677F7A /* LoginSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6967228C17EF900677F7A /* LoginSessionController.swift */; };
+		6FD6967428C17EF900677F7A /* LoginSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6967228C17EF900677F7A /* LoginSessionController.swift */; };
+		6FD6967528C17EF900677F7A /* LoginSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6967228C17EF900677F7A /* LoginSessionController.swift */; };
+		6FD6967628C17EF900677F7A /* LoginSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6967228C17EF900677F7A /* LoginSessionController.swift */; };
+		867E97206B7E8E15D5E98BD5 /* Pods_MyClubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93454E2246056047FCE5213 /* Pods_MyClubApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184D1D7D218EA9385CD1D61A /* Pods-UJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UJS.debug.xcconfig"; path = "Target Support Files/Pods-UJS/Pods-UJS.debug.xcconfig"; sourceTree = "<group>"; };
+		19996D2CFF74ADAF0ED579CE /* Pods-MyClubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClubApp.release.xcconfig"; path = "Target Support Files/Pods-MyClubApp/Pods-MyClubApp.release.xcconfig"; sourceTree = "<group>"; };
+		4009D293F1B1E0F27035E04C /* Pods_SSFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42103E0AB36E6D67374F3986 /* Pods-UJS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UJS.release.xcconfig"; path = "Target Support Files/Pods-UJS/Pods-UJS.release.xcconfig"; sourceTree = "<group>"; };
+		476FD63FC5799E2CF22BCCAE /* Pods-FCEBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCEBM.debug.xcconfig"; path = "Target Support Files/Pods-FCEBM/Pods-FCEBM.debug.xcconfig"; sourceTree = "<group>"; };
+		57FDF41A4C70E5F1491900A8 /* Pods-FCEBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCEBM.release.xcconfig"; path = "Target Support Files/Pods-FCEBM/Pods-FCEBM.release.xcconfig"; sourceTree = "<group>"; };
 		6FD6952228BEBE4400677F7A /* MyClubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClubAppApp.swift; sourceTree = "<group>"; };
 		6FD6952928BEBE4600677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +187,7 @@
 		6FD6956128BED72A00677F7A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6FD6956428BED72B00677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD6956728BED72B00677F7A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		6FD6957828BEDB9800677F7A /* FCEBM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FCEBM-Info.plist"; sourceTree = "<group>"; };
+		6FD6957828BEDB9800677F7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenView.swift; sourceTree = "<group>"; };
 		6FD6957E28BEE41D00677F7A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		6FD6958128BEE4AA00677F7A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -71,6 +203,30 @@
 		6FD6959B28C0377000677F7A /* DataEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
 		6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRegistryScreenView.swift; sourceTree = "<group>"; };
 		6FD6959F28C0475700677F7A /* DatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
+		6FD695C628C12CA800677F7A /* FCEBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCEBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD6961428C1302600677F7A /* UJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD6961628C1318700677F7A /* FCEBM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FCEBM-Info.plist"; sourceTree = "<group>"; };
+		6FD6961828C1319C00677F7A /* UJS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UJS-Info.plist"; sourceTree = "<group>"; };
+		6FD6963F28C131C800677F7A /* SSFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD6964228C1322A00677F7A /* SSFC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSFC-Info.plist"; sourceTree = "<group>"; };
+		6FD6964528C1331F00677F7A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		6FD6964628C1332000677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FD6964A28C1333D00677F7A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		6FD6964E28C1334B00677F7A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		6FD6964F28C1334B00677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FD6965228C1515600677F7A /* RootEventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootEventScreenView.swift; sourceTree = "<group>"; };
+		6FD6965728C1516D00677F7A /* HistoricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricView.swift; sourceTree = "<group>"; };
+		6FD6965C28C1518000677F7A /* GroupDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDashboardView.swift; sourceTree = "<group>"; };
+		6FD6966128C1518F00677F7A /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		6FD6966828C16C6700677F7A /* UserListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListScreenView.swift; sourceTree = "<group>"; };
+		6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6FD6967228C17EF900677F7A /* LoginSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSessionController.swift; sourceTree = "<group>"; };
+		7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCEBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8676CCA94E7898C7ADFCCCA4 /* Pods-MyClubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClubApp.debug.xcconfig"; path = "Target Support Files/Pods-MyClubApp/Pods-MyClubApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9A088568CC0FB4680155649E /* Pods_UJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6323C20254147CE7ACFB5F1 /* Pods-SSFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSFC.release.xcconfig"; path = "Target Support Files/Pods-SSFC/Pods-SSFC.release.xcconfig"; sourceTree = "<group>"; };
+		C9EAF2E93CE0FF8FA1BD39FE /* Pods-SSFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSFC.debug.xcconfig"; path = "Target Support Files/Pods-SSFC/Pods-SSFC.debug.xcconfig"; sourceTree = "<group>"; };
+		F93454E2246056047FCE5213 /* Pods_MyClubApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyClubApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,17 +234,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867E97206B7E8E15D5E98BD5 /* Pods_MyClubApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD695BD28C12CA800677F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6D95F12FB14DC18EDEE028 /* Pods_FCEBM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD6960B28C1302600677F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C509521120B520F644030AC /* Pods_UJS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD6963628C131C800677F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E77ED5CB47BC13B6ACCF8A /* Pods_SSFC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2C6743374F88469D767902 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */,
+				F93454E2246056047FCE5213 /* Pods_MyClubApp.framework */,
+				4009D293F1B1E0F27035E04C /* Pods_SSFC.framework */,
+				9A088568CC0FB4680155649E /* Pods_UJS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6FD6951928BEBE4400677F7A = {
 			isa = PBXGroup;
 			children = (
 				6FD6952428BEBE4400677F7A /* MyClubApp */,
 				6FD6952328BEBE4400677F7A /* Products */,
+				CA796835D665DAE107F67A46 /* Pods */,
+				3F2C6743374F88469D767902 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +290,9 @@
 			isa = PBXGroup;
 			children = (
 				6FD6952228BEBE4400677F7A /* MyClubApp.app */,
+				6FD695C628C12CA800677F7A /* FCEBM.app */,
+				6FD6961428C1302600677F7A /* UJS.app */,
+				6FD6963F28C131C800677F7A /* SSFC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +336,7 @@
 		6FD6955728BED72A00677F7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6966728C16C0900677F7A /* Users */,
 				6FD6958028BEE47500677F7A /* Profile */,
 				6FD6957D28BEE40300677F7A /* About */,
 				6FD6957A28BEE3BB00677F7A /* Events */,
@@ -191,6 +389,9 @@
 		6FD6956228BED72B00677F7A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6964128C131F200677F7A /* SSFC */,
+				6FD695EE28C1300500677F7A /* UJS */,
+				6FD6957828BEDB9800677F7A /* Info.plist */,
 				6FD6956328BED72B00677F7A /* FCEBM */,
 			);
 			path = Resources;
@@ -199,7 +400,9 @@
 		6FD6956328BED72B00677F7A /* FCEBM */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6957828BEDB9800677F7A /* FCEBM-Info.plist */,
+				6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */,
+				6FD6964928C1333D00677F7A /* texts */,
+				6FD6961628C1318700677F7A /* FCEBM-Info.plist */,
 				6FD6956428BED72B00677F7A /* Assets.xcassets */,
 			);
 			path = FCEBM;
@@ -211,6 +414,7 @@
 				6FD6956128BED72A00677F7A /* HomeViewController.swift */,
 				6FD6956728BED72B00677F7A /* WebViewController.swift */,
 				6FD6958928BFC73300677F7A /* SignUpViewController.swift */,
+				6FD6967228C17EF900677F7A /* LoginSessionController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,7 +422,10 @@
 		6FD6957A28BEE3BB00677F7A /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */,
+				6FD6966628C1589000677F7A /* TabEvents */,
+				6FD6965728C1516D00677F7A /* HistoricView.swift */,
+				6FD6965C28C1518000677F7A /* GroupDashboardView.swift */,
+				6FD6966128C1518F00677F7A /* MessagesView.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -273,6 +480,82 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		6FD695EE28C1300500677F7A /* UJS */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6964F28C1334B00677F7A /* Assets.xcassets */,
+				6FD6964D28C1334B00677F7A /* texts */,
+				6FD6961828C1319C00677F7A /* UJS-Info.plist */,
+			);
+			path = UJS;
+			sourceTree = "<group>";
+		};
+		6FD6964128C131F200677F7A /* SSFC */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6964628C1332000677F7A /* Assets.xcassets */,
+				6FD6964428C1331F00677F7A /* texts */,
+				6FD6964228C1322A00677F7A /* SSFC-Info.plist */,
+			);
+			path = SSFC;
+			sourceTree = "<group>";
+		};
+		6FD6964428C1331F00677F7A /* texts */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6964528C1331F00677F7A /* about.html */,
+			);
+			path = texts;
+			sourceTree = "<group>";
+		};
+		6FD6964928C1333D00677F7A /* texts */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6964A28C1333D00677F7A /* about.html */,
+			);
+			path = texts;
+			sourceTree = "<group>";
+		};
+		6FD6964D28C1334B00677F7A /* texts */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6964E28C1334B00677F7A /* about.html */,
+			);
+			path = texts;
+			sourceTree = "<group>";
+		};
+		6FD6966628C1589000677F7A /* TabEvents */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6965228C1515600677F7A /* RootEventScreenView.swift */,
+				6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */,
+			);
+			path = TabEvents;
+			sourceTree = "<group>";
+		};
+		6FD6966728C16C0900677F7A /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6966828C16C6700677F7A /* UserListScreenView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		CA796835D665DAE107F67A46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				476FD63FC5799E2CF22BCCAE /* Pods-FCEBM.debug.xcconfig */,
+				57FDF41A4C70E5F1491900A8 /* Pods-FCEBM.release.xcconfig */,
+				8676CCA94E7898C7ADFCCCA4 /* Pods-MyClubApp.debug.xcconfig */,
+				19996D2CFF74ADAF0ED579CE /* Pods-MyClubApp.release.xcconfig */,
+				C9EAF2E93CE0FF8FA1BD39FE /* Pods-SSFC.debug.xcconfig */,
+				A6323C20254147CE7ACFB5F1 /* Pods-SSFC.release.xcconfig */,
+				184D1D7D218EA9385CD1D61A /* Pods-UJS.debug.xcconfig */,
+				42103E0AB36E6D67374F3986 /* Pods-UJS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,9 +563,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FD6953528BEBE4600677F7A /* Build configuration list for PBXNativeTarget "MyClubApp" */;
 			buildPhases = (
+				F2B207057A6B48DEEE19242F /* [CP] Check Pods Manifest.lock */,
 				6FD6951E28BEBE4400677F7A /* Sources */,
 				6FD6951F28BEBE4400677F7A /* Frameworks */,
 				6FD6952028BEBE4400677F7A /* Resources */,
+				9A308F5EB1957C72C7C2557B /* [CP] Embed Pods Frameworks */,
+				DF9E5053FE8C614207BD2D2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +577,64 @@
 			name = MyClubApp;
 			productName = MyClubApp;
 			productReference = 6FD6952228BEBE4400677F7A /* MyClubApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FD695A128C12CA800677F7A /* FCEBM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD695C328C12CA800677F7A /* Build configuration list for PBXNativeTarget "FCEBM" */;
+			buildPhases = (
+				614129A8D73A700144CBEF54 /* [CP] Check Pods Manifest.lock */,
+				6FD695A228C12CA800677F7A /* Sources */,
+				6FD695BD28C12CA800677F7A /* Frameworks */,
+				6FD695BE28C12CA800677F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCEBM;
+			productName = MyClubApp;
+			productReference = 6FD695C628C12CA800677F7A /* FCEBM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FD695EF28C1302600677F7A /* UJS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD6961128C1302600677F7A /* Build configuration list for PBXNativeTarget "UJS" */;
+			buildPhases = (
+				86C39EAF944B10B9C634343E /* [CP] Check Pods Manifest.lock */,
+				6FD695F028C1302600677F7A /* Sources */,
+				6FD6960B28C1302600677F7A /* Frameworks */,
+				6FD6960C28C1302600677F7A /* Resources */,
+				24EA703B6BC65C46F7B253BA /* [CP] Embed Pods Frameworks */,
+				4B852D72459F4D09C6B885C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UJS;
+			productName = MyClubApp;
+			productReference = 6FD6961428C1302600677F7A /* UJS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FD6961A28C131C800677F7A /* SSFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD6963C28C131C800677F7A /* Build configuration list for PBXNativeTarget "SSFC" */;
+			buildPhases = (
+				5C58F8908E4B501BDB6C3144 /* [CP] Check Pods Manifest.lock */,
+				6FD6961B28C131C800677F7A /* Sources */,
+				6FD6963628C131C800677F7A /* Frameworks */,
+				6FD6963728C131C800677F7A /* Resources */,
+				D7593A3774A5E57FAFA62B33 /* [CP] Embed Pods Frameworks */,
+				82F8441E54828B33CF728E8A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSFC;
+			productName = MyClubApp;
+			productReference = 6FD6963F28C131C800677F7A /* SSFC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -322,6 +666,9 @@
 			projectRoot = "";
 			targets = (
 				6FD6952128BEBE4400677F7A /* MyClubApp */,
+				6FD695A128C12CA800677F7A /* FCEBM */,
+				6FD695EF28C1302600677F7A /* UJS */,
+				6FD6961A28C131C800677F7A /* SSFC */,
 			);
 		};
 /* End PBXProject section */
@@ -331,14 +678,248 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD6957928BEDB9800677F7A /* FCEBM-Info.plist in Resources */,
+				6FD6957928BEDB9800677F7A /* Info.plist in Resources */,
 				6FD6952D28BEBE4600677F7A /* Preview Assets.xcassets in Resources */,
 				6FD6956F28BED72B00677F7A /* Assets.xcassets in Resources */,
+				6FD6964B28C1333D00677F7A /* about.html in Resources */,
 				6FD6952A28BEBE4600677F7A /* Assets.xcassets in Resources */,
+				6FD6966E28C17AB900677F7A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD695BE28C12CA800677F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD6964C28C1333D00677F7A /* about.html in Resources */,
+				6FD6961728C1318700677F7A /* FCEBM-Info.plist in Resources */,
+				6FD695C028C12CA800677F7A /* Preview Assets.xcassets in Resources */,
+				6FD695C128C12CA800677F7A /* Assets.xcassets in Resources */,
+				6FD695C228C12CA800677F7A /* Assets.xcassets in Resources */,
+				6FD6966F28C17AB900677F7A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD6960C28C1302600677F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD6961928C1319C00677F7A /* UJS-Info.plist in Resources */,
+				6FD6960E28C1302600677F7A /* Preview Assets.xcassets in Resources */,
+				6FD6965028C1334B00677F7A /* about.html in Resources */,
+				6FD6965128C1334B00677F7A /* Assets.xcassets in Resources */,
+				6FD6961028C1302600677F7A /* Assets.xcassets in Resources */,
+				6FD6967028C17AB900677F7A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD6963728C131C800677F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD6963928C131C800677F7A /* Preview Assets.xcassets in Resources */,
+				6FD6964328C1322A00677F7A /* SSFC-Info.plist in Resources */,
+				6FD6964728C1332000677F7A /* about.html in Resources */,
+				6FD6964828C1332000677F7A /* Assets.xcassets in Resources */,
+				6FD6963B28C131C800677F7A /* Assets.xcassets in Resources */,
+				6FD6967128C17AB900677F7A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24EA703B6BC65C46F7B253BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UJS/Pods-UJS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UJS/Pods-UJS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UJS/Pods-UJS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B852D72459F4D09C6B885C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UJS/Pods-UJS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UJS/Pods-UJS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UJS/Pods-UJS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C58F8908E4B501BDB6C3144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSFC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		614129A8D73A700144CBEF54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCEBM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F8441E54828B33CF728E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSFC/Pods-SSFC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSFC/Pods-SSFC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSFC/Pods-SSFC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C39EAF944B10B9C634343E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UJS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A308F5EB1957C72C7C2557B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyClubApp/Pods-MyClubApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyClubApp/Pods-MyClubApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyClubApp/Pods-MyClubApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7593A3774A5E57FAFA62B33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSFC/Pods-SSFC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSFC/Pods-SSFC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSFC/Pods-SSFC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9E5053FE8C614207BD2D2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyClubApp/Pods-MyClubApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyClubApp/Pods-MyClubApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyClubApp/Pods-MyClubApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B207057A6B48DEEE19242F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyClubApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FD6951E28BEBE4400677F7A /* Sources */ = {
@@ -350,27 +931,150 @@
 				6FD6959028C02D1900677F7A /* AuthViewModel.swift in Sources */,
 				6FD6952F28BEBE4600677F7A /* Persistence.swift in Sources */,
 				6FD6957128BED72B00677F7A /* WebViewController.swift in Sources */,
+				6FD6965828C1516D00677F7A /* HistoricView.swift in Sources */,
 				6FD6956E28BED72B00677F7A /* HomeViewController.swift in Sources */,
 				6FD6959C28C0377000677F7A /* DataEncoding.swift in Sources */,
 				6FD6956C28BED72B00677F7A /* MenuView.swift in Sources */,
 				6FD695A028C0475700677F7A /* DatePickerTextField.swift in Sources */,
 				6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */,
+				6FD6966928C16C6800677F7A /* UserListScreenView.swift in Sources */,
 				6FD6952628BEBE4400677F7A /* MyClubAppApp.swift in Sources */,
 				6FD6956828BED72B00677F7A /* Configuration.swift in Sources */,
 				6FD6956B28BED72B00677F7A /* SignInScreenView.swift in Sources */,
 				6FD6956A28BED72B00677F7A /* OnBoardingView.swift in Sources */,
 				6FD6959928C036A900677F7A /* NewUserModel.swift in Sources */,
 				6FD6958828BFC6A300677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD6965328C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6958628BFC67F00677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */,
+				6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD6956D28BED72B00677F7A /* BaseView.swift in Sources */,
 				6FD6958E28C02AFF00677F7A /* EntryTextFieldView.swift in Sources */,
+				6FD6967328C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6953228BEBE4600677F7A /* MyClubApp.xcdatamodeld in Sources */,
+				6FD6965D28C1518000677F7A /* GroupDashboardView.swift in Sources */,
 				6FD6958428BFC5D500677F7A /* RootSignUpView.swift in Sources */,
 				6FD6956928BED72B00677F7A /* HomeWebView.swift in Sources */,
 				6FD6958228BEE4AA00677F7A /* ProfileView.swift in Sources */,
 				6FD6959E28C0462000677F7A /* AddressRegistryScreenView.swift in Sources */,
 				6FD6957C28BEE3DE00677F7A /* EventScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD695A228C12CA800677F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD695A328C12CA800677F7A /* CreateNewUserViewModel.swift in Sources */,
+				6FD695A428C12CA800677F7A /* ItemButtonStyle.swift in Sources */,
+				6FD695A528C12CA800677F7A /* AuthViewModel.swift in Sources */,
+				6FD695A628C12CA800677F7A /* Persistence.swift in Sources */,
+				6FD695A728C12CA800677F7A /* WebViewController.swift in Sources */,
+				6FD6965928C1516D00677F7A /* HistoricView.swift in Sources */,
+				6FD695A828C12CA800677F7A /* HomeViewController.swift in Sources */,
+				6FD695A928C12CA800677F7A /* DataEncoding.swift in Sources */,
+				6FD695AA28C12CA800677F7A /* MenuView.swift in Sources */,
+				6FD695AB28C12CA800677F7A /* DatePickerTextField.swift in Sources */,
+				6FD695AC28C12CA800677F7A /* AboutView.swift in Sources */,
+				6FD6966A28C16C6800677F7A /* UserListScreenView.swift in Sources */,
+				6FD695AD28C12CA800677F7A /* MyClubAppApp.swift in Sources */,
+				6FD695AE28C12CA800677F7A /* Configuration.swift in Sources */,
+				6FD695AF28C12CA800677F7A /* SignInScreenView.swift in Sources */,
+				6FD695B028C12CA800677F7A /* OnBoardingView.swift in Sources */,
+				6FD695B128C12CA800677F7A /* NewUserModel.swift in Sources */,
+				6FD695B228C12CA800677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD6965428C1515700677F7A /* RootEventScreenView.swift in Sources */,
+				6FD695B328C12CA800677F7A /* EmailSignUpView.swift in Sources */,
+				6FD695B428C12CA800677F7A /* SignUpViewController.swift in Sources */,
+				6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD695B528C12CA800677F7A /* BaseView.swift in Sources */,
+				6FD695B628C12CA800677F7A /* EntryTextFieldView.swift in Sources */,
+				6FD6967428C17EF900677F7A /* LoginSessionController.swift in Sources */,
+				6FD695B728C12CA800677F7A /* MyClubApp.xcdatamodeld in Sources */,
+				6FD6965E28C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD695B828C12CA800677F7A /* RootSignUpView.swift in Sources */,
+				6FD695B928C12CA800677F7A /* HomeWebView.swift in Sources */,
+				6FD695BA28C12CA800677F7A /* ProfileView.swift in Sources */,
+				6FD695BB28C12CA800677F7A /* AddressRegistryScreenView.swift in Sources */,
+				6FD695BC28C12CA800677F7A /* EventScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD695F028C1302600677F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD695F128C1302600677F7A /* CreateNewUserViewModel.swift in Sources */,
+				6FD695F228C1302600677F7A /* ItemButtonStyle.swift in Sources */,
+				6FD695F328C1302600677F7A /* AuthViewModel.swift in Sources */,
+				6FD695F428C1302600677F7A /* Persistence.swift in Sources */,
+				6FD695F528C1302600677F7A /* WebViewController.swift in Sources */,
+				6FD6965A28C1516D00677F7A /* HistoricView.swift in Sources */,
+				6FD695F628C1302600677F7A /* HomeViewController.swift in Sources */,
+				6FD695F728C1302600677F7A /* DataEncoding.swift in Sources */,
+				6FD695F828C1302600677F7A /* MenuView.swift in Sources */,
+				6FD695F928C1302600677F7A /* DatePickerTextField.swift in Sources */,
+				6FD695FA28C1302600677F7A /* AboutView.swift in Sources */,
+				6FD6966B28C16C6800677F7A /* UserListScreenView.swift in Sources */,
+				6FD695FB28C1302600677F7A /* MyClubAppApp.swift in Sources */,
+				6FD695FC28C1302600677F7A /* Configuration.swift in Sources */,
+				6FD695FD28C1302600677F7A /* SignInScreenView.swift in Sources */,
+				6FD695FE28C1302600677F7A /* OnBoardingView.swift in Sources */,
+				6FD695FF28C1302600677F7A /* NewUserModel.swift in Sources */,
+				6FD6960028C1302600677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD6965528C1515700677F7A /* RootEventScreenView.swift in Sources */,
+				6FD6960128C1302600677F7A /* EmailSignUpView.swift in Sources */,
+				6FD6960228C1302600677F7A /* SignUpViewController.swift in Sources */,
+				6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD6960328C1302600677F7A /* BaseView.swift in Sources */,
+				6FD6960428C1302600677F7A /* EntryTextFieldView.swift in Sources */,
+				6FD6967528C17EF900677F7A /* LoginSessionController.swift in Sources */,
+				6FD6960528C1302600677F7A /* MyClubApp.xcdatamodeld in Sources */,
+				6FD6965F28C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD6960628C1302600677F7A /* RootSignUpView.swift in Sources */,
+				6FD6960728C1302600677F7A /* HomeWebView.swift in Sources */,
+				6FD6960828C1302600677F7A /* ProfileView.swift in Sources */,
+				6FD6960928C1302600677F7A /* AddressRegistryScreenView.swift in Sources */,
+				6FD6960A28C1302600677F7A /* EventScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD6961B28C131C800677F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD6961C28C131C800677F7A /* CreateNewUserViewModel.swift in Sources */,
+				6FD6961D28C131C800677F7A /* ItemButtonStyle.swift in Sources */,
+				6FD6961E28C131C800677F7A /* AuthViewModel.swift in Sources */,
+				6FD6961F28C131C800677F7A /* Persistence.swift in Sources */,
+				6FD6962028C131C800677F7A /* WebViewController.swift in Sources */,
+				6FD6965B28C1516E00677F7A /* HistoricView.swift in Sources */,
+				6FD6962128C131C800677F7A /* HomeViewController.swift in Sources */,
+				6FD6962228C131C800677F7A /* DataEncoding.swift in Sources */,
+				6FD6962328C131C800677F7A /* MenuView.swift in Sources */,
+				6FD6962428C131C800677F7A /* DatePickerTextField.swift in Sources */,
+				6FD6962528C131C800677F7A /* AboutView.swift in Sources */,
+				6FD6966C28C16C6800677F7A /* UserListScreenView.swift in Sources */,
+				6FD6962628C131C800677F7A /* MyClubAppApp.swift in Sources */,
+				6FD6962728C131C800677F7A /* Configuration.swift in Sources */,
+				6FD6962828C131C800677F7A /* SignInScreenView.swift in Sources */,
+				6FD6962928C131C800677F7A /* OnBoardingView.swift in Sources */,
+				6FD6962A28C131C800677F7A /* NewUserModel.swift in Sources */,
+				6FD6962B28C131C800677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD6965628C1515700677F7A /* RootEventScreenView.swift in Sources */,
+				6FD6962C28C131C800677F7A /* EmailSignUpView.swift in Sources */,
+				6FD6962D28C131C800677F7A /* SignUpViewController.swift in Sources */,
+				6FD6966528C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD6962E28C131C800677F7A /* BaseView.swift in Sources */,
+				6FD6962F28C131C800677F7A /* EntryTextFieldView.swift in Sources */,
+				6FD6967628C17EF900677F7A /* LoginSessionController.swift in Sources */,
+				6FD6963028C131C800677F7A /* MyClubApp.xcdatamodeld in Sources */,
+				6FD6966028C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD6963128C131C800677F7A /* RootSignUpView.swift in Sources */,
+				6FD6963228C131C800677F7A /* HomeWebView.swift in Sources */,
+				6FD6963328C131C800677F7A /* ProfileView.swift in Sources */,
+				6FD6963428C131C800677F7A /* AddressRegistryScreenView.swift in Sources */,
+				6FD6963528C131C800677F7A /* EventScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +1199,71 @@
 		};
 		6FD6953628BEBE4600677F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8676CCA94E7898C7ADFCCCA4 /* Pods-MyClubApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyClubApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7C4373ZES7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyClubApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "be-is.fr.UJS-Toulouse-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FD6953728BEBE4600677F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19996D2CFF74ADAF0ED579CE /* Pods-MyClubApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyClubApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7C4373ZES7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyClubApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "be-is.fr.UJS-Toulouse-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FD695C428C12CA800677F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476FD63FC5799E2CF22BCCAE /* Pods-FCEBM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,7 +1285,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = polestar.MyClubApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "be-is.fr.UJS-Toulouse-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -524,8 +1293,9 @@
 			};
 			name = Debug;
 		};
-		6FD6953728BEBE4600677F7A /* Release */ = {
+		6FD695C528C12CA800677F7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FDF41A4C70E5F1491900A8 /* Pods-FCEBM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,6 +1306,134 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MyClubApp/Resources/FCEBM/FCEBM-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "be-is.fr.UJS-Toulouse-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FD6961228C1302600677F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 184D1D7D218EA9385CD1D61A /* Pods-UJS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyClubApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7C4373ZES7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyClubApp/Resources/UJS/UJS-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "be-is.fr.UJS-Toulouse-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FD6961328C1302600677F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42103E0AB36E6D67374F3986 /* Pods-UJS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyClubApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7C4373ZES7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyClubApp/Resources/UJS/UJS-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "be-is.fr.UJS-Toulouse-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FD6963D28C131C800677F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9EAF2E93CE0FF8FA1BD39FE /* Pods-SSFC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyClubApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7C4373ZES7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyClubApp/Resources/SSFC/SSFC-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = polestar.MyClubApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FD6963E28C131C800677F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6323C20254147CE7ACFB5F1 /* Pods-SSFC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyClubApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7C4373ZES7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyClubApp/Resources/SSFC/SSFC-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -572,6 +1470,33 @@
 			buildConfigurations = (
 				6FD6953628BEBE4600677F7A /* Debug */,
 				6FD6953728BEBE4600677F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD695C328C12CA800677F7A /* Build configuration list for PBXNativeTarget "FCEBM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD695C428C12CA800677F7A /* Debug */,
+				6FD695C528C12CA800677F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD6961128C1302600677F7A /* Build configuration list for PBXNativeTarget "UJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD6961228C1302600677F7A /* Debug */,
+				6FD6961328C1302600677F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD6963C28C131C800677F7A /* Build configuration list for PBXNativeTarget "SSFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD6963D28C131C800677F7A /* Debug */,
+				6FD6963E28C131C800677F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

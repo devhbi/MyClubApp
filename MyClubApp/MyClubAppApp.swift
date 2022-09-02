@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct MyClubApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             BaseView()
+                .environmentObject(LoginSessionController())
                 .environmentObject(HomeViewController())
                 .environmentObject(SignUpViewController())
         }

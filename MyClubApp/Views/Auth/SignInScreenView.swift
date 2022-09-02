@@ -10,11 +10,13 @@ import SwiftUI
 
 struct SignInScreenView: View {
     @EnvironmentObject var presentedView: HomeViewController
-    @State private var email: String = "" // by default it's empty
-    @State private var password: String = "" // by default it's empty
+    @EnvironmentObject var authSession: LoginSessionController
+    @StateObject var userVM: CreateNewUserViewModel
+    @State private var isPresentedResetUserAlert = false
+    
     var body: some View {
         ZStack {
-            Color("BgColor").edgesIgnoringSafeArea(.all)
+//            Color("BgColor").edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
                 Image("logo")
@@ -37,32 +39,34 @@ struct SignInScreenView: View {
                         Spacer()
                     }
                     
-                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("CONTINUER AVEC GOOGLE").foregroundColor(Color("PrimaryColor")))
+                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("CONTINUER AVEC GOOGLE")
+//                        .foregroundColor(Color("PrimaryColor"))
+                    )
                     
                     Text("ou avec votre compte")
                         .foregroundColor(Color.black.opacity(0.4))
                     
-                    TextField("Adresse email", text: self.$email)
-                        .padding(.vertical, 13)
-                        .padding(.horizontal)
-                        .font(.system(size: 14))
-                        .shadow(color: Color(UIColor.label).opacity(0.05), radius: 5, x: 5, y: 5)
-                        .shadow(color: Color(UIColor.label).opacity(0.05), radius: 5, x: -5, y: -5)
-                        .cornerRadius(5)
-                        .overlay(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(UIColor.label), lineWidth: 1))
-                    
-                    SecureField("Mot de passe", text: self.$password)
-                        .padding(.vertical, 13)
-                        .padding(.horizontal)
-                        .font(.system(size: 14))
-                        .shadow(color: Color(UIColor.label).opacity(0.05), radius: 5, x: 5, y: 5)
-                        .shadow(color: Color(UIColor.label).opacity(0.05), radius: 5, x: -5, y: -5)
-                        .cornerRadius(5)
-                        .overlay(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(UIColor.label), lineWidth: 1))
+                    EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Email address", promptText: self.userVM.emailPrompt, field: self.$userVM.newUserModel.email)
+                        .onAppear {self.userVM.newUserModel.email = "hbi.test@gmail.com"}
+                    EntryTextFieldView(sfSymbolName: "key", placeHolder: "Password", promptText: "", isSecure: true, field: self.$userVM.newUserModel.password)
+                        .onAppear {self.userVM.newUserModel.password = "hbixDev0"}
                    
                     HStack {
-                        Text("Mot de passe oublié?")
-                            .foregroundColor(Color("PrimaryColor"))
+                        Button(action: {
+                            print("Mot de passe oublié pressed")
+                            withAnimation(.default) {
+                                self.isPresentedResetUserAlert = true
+                            }
+                        }){
+                            Text("Mot de passe oublié?")
+                                .foregroundColor(Color("PrimaryColor"))
+                        }
+                        .alert(isPresented: self.$isPresentedResetUserAlert) { () -> Alert in
+                            Alert(title: Text("Mot de passe oublié"), message: Text("Voulez-vous réinitialiser votre mot de passe?"), primaryButton: .default(Text("Oui"), action: {
+                                print("Oui")
+                            }), secondaryButton: .default(Text("Annuler")))
+                        }
+                        
                         Spacer()
                         
                         Button(action: {
@@ -77,7 +81,7 @@ struct SignInScreenView: View {
                     }
                     .padding(.vertical, 12)
                     
-                    LoginButton(title: "Je m'identifier")
+                    LoginButton
                 }
                 
                 Spacer()
@@ -95,7 +99,7 @@ struct SignInScreenView: View {
 
 struct SignInScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInScreenView()
+        SignInScreenView(userVM : CreateNewUserViewModel())
     }
 }
 
@@ -115,7 +119,7 @@ struct SocalLoginButton: View {
         }
         .padding()
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-        .background(Color.white)
+//        .background(Color.white)
         .cornerRadius(16)
         .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
         .overlay(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(UIColor.label), lineWidth: 1))
@@ -136,13 +140,20 @@ struct PrimaryButton: View {
     }
 }
 
-struct LoginButton: View {
-    var title: String
-    var body: some View {
+extension SignInScreenView  {
+    var LoginButton : some View {
         Button(action: {
-            print("Login Button tapped")
+            authSession.signIn(email: self.userVM.newUserModel.email, password: self.userVM.newUserModel.password){(result, error) in
+                if let error = error {
+                    print("Failed \(error.localizedDescription)")
+                }
+                else {
+                    self.presentedView.currentView = .home
+                    self.authSession.currentLoginState = .login
+                }
+            }
         }) {
-            Text(title)
+            Text("JE M'IDENTIFIE!")
                 .font(.system(size: 18, weight: .bold))
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)

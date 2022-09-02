@@ -4,15 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FCEBM.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MyClubApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SSFC.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>UJS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>6FD6952128BEBE4400677F7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FD695A128C12CA800677F7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FD695EF28C1302600677F7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FD6961A28C131C800677F7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
