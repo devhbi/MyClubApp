@@ -9,7 +9,17 @@ import SwiftUI
 
 struct HistoricView: View {
     var body: some View {
-        Text("HISTORIQUE")
+        VStack(alignment: .leading) {
+            Text("HISTORIQUE")
+                .font(.title)
+        }
+        .frame(
+          minWidth: 0,
+          maxWidth: .infinity,
+          minHeight: 0,
+          maxHeight: .infinity
+        )
+        .background(Color.red)
     }
 }
 

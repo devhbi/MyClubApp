@@ -19,6 +19,7 @@ struct BaseView: View {
         
         ZStack (alignment: .leading) {
             RightViewContainer
+            
             LeftViewContainer
         }
         .onAppear(perform: getUserSession)
@@ -41,9 +42,9 @@ extension BaseView  {
         GeometryReader {_ in
             VStack {
                 TopViewContainer
-                // Right view
                 BodyViewContainer
             }
+//            .edgesIgnoringSafeArea(.all)
         }
     }
 }
@@ -112,7 +113,7 @@ extension BaseView  {
                     case .about:
                         AboutView()
                     case .event:
-                        EventScreenView()
+                        RootEventScreenView()
                     case .account:
                         AccountScreenView()
                     case .users:

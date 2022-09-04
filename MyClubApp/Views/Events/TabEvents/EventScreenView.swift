@@ -1,78 +1,98 @@
 //
-//  EventsView.swift
+//  EventScreenView.swift
 //  MyClubApp
 //
-//  Created by Honoré BIZAGWIRA on 31/08/2022.
+//  Created by Honoré BIZAGWIRA on 04/09/2022.
 //
 
 import SwiftUI
 
+import SwiftUI
+
 struct EventScreenView: View {
-    let imagePaths: [String: String]  = [
-        "Events": "calendar.badge.clock",
-        "Historique": "bell.fill",
-        "Groupes": "person.2.circle",
-        "Messages": "message.fill"
-    ]
-    @State var currentTab: String = "Events"
-    
+    @ObservedObject var eventListVM = EventListVM()
+    @State var showAddEventSheetView: Bool = false
+    @State private var numberOfRows = 1
+    @EnvironmentObject var accountVM: AccountViewModel
+    let spacing: CGFloat = 10
+    @State private var selectedTabIndex = 0
     var body: some View {
-        // Whole Navigation View
-        HStack(spacing: 0) {
-            
-            // Main Tab View
-            VStack(spacing: 0) {
-                TabView (selection: self.$currentTab){
-                    RootEventScreenView()
-                        .tag("Events")
-                    
-                    HistoricView()
-                        .tag("Historique")
-                    
-                    GroupDashboardView()
-                        .tag("Groupes")
-                    
-                    MessagesView()
-                        .tag("Messages")
-                }
-                Divider()
-                VStack(spacing: 0) {
-                    // Custom Tab Bar ...
-                    HStack (spacing: 0) {
-                        // Tab button
-                        TabButton(image: "Events")
-                        
-                        TabButton(image: "Historique")
-                        
-                        TabButton(image: "Groupes")
-                        
-                        TabButton(image: "Messages")
+        let columns = Array(repeating: GridItem(.flexible(),  spacing: spacing), count: self.numberOfRows)
+
+        ZStack(alignment: .bottom) {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: spacing) {
+                    ForEach (self.eventListVM.eventVMs , id: \.self) {eventVM in
+                        EventCardButton(evtListVM: eventListVM, evtVM: eventVM)
                     }
-                    .padding([.all], 15)
                 }
+                .padding(.all, 10)
+            }
+
+            if (!self.accountVM.isMember) {
+                AddEventButton
             }
         }
+        .navigationBarHidden(true)
+        .onAppear (perform: eventListVM.load)
     }
-    
-    @ViewBuilder
-    func TabButton (image: String) -> some View {
-        Button {
-            withAnimation{
-                currentTab = image
+}
+
+extension EventScreenView {
+    var AddEventButton: some View {
+        VStack {
+            Spacer()
+            HStack {
+                Spacer()
+                Button(action: {
+                    withAnimation {
+                        self.showAddEventSheetView.toggle()
+                    }
+                }, label: {
+                    Text("+")
+                        .font(.system(.largeTitle))
+                        .frame(width: 64, height: 56)
+                        .foregroundColor(Color.white)
+                        .padding(.bottom, 8)
+                })
+                .background(Color.blue)
+                .cornerRadius(38.5)
+                .padding()
+                .shadow(color: Color.black.opacity(0.3),
+                        radius: 3,
+                        x: 3,
+                        y: 3)
+                .opacity(self.accountVM.isMember ? 0 : 1)
+                .disabled(self.accountVM.isMember)
             }
-        }
-        label: {
-            Image(systemName: imagePaths[image]!)
-                .font(.title)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 22, height: 22)
-                .foregroundColor(currentTab == image ? .primary : .gray)
-                .frame(maxWidth: .infinity)
         }
     }
 }
 
-struct EventsView_Previews: PreviewProvider {
+struct EventCardButton:View {
+    @State private var isPresented = false
+    @ObservedObject var evtListVM: EventListVM
+    let evtVM: EventVM
+    var body: some View {
+        Button(action: {
+            isPresented.toggle()
+        }, label: {
+            EventItemCardView(vm: evtVM)
+        })
+        .fullScreenCover(isPresented: $isPresented, onDismiss: {
+            withAnimation {
+                evtListVM.load()
+            }
+        }, content: {
+            EventDetailView(vm: evtVM)
+        })
+        .buttonStyle(ItemButtonStyle(cornerRadius: 16))
+    }
+}
+
+
+
+struct EventScreenView_Previews: PreviewProvider {
     static var previews: some View {
         EventScreenView()
     }

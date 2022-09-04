@@ -25,7 +25,7 @@
 		6FD6956F28BED72B00677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6956428BED72B00677F7A /* Assets.xcassets */; };
 		6FD6957128BED72B00677F7A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6956728BED72B00677F7A /* WebViewController.swift */; };
 		6FD6957928BEDB9800677F7A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6957828BEDB9800677F7A /* Info.plist */; };
-		6FD6957C28BEE3DE00677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD6957C28BEE3DE00677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */; };
 		6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957E28BEE41D00677F7A /* AboutView.swift */; };
 		6FD6958228BEE4AA00677F7A /* AccountScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* AccountScreenView.swift */; };
 		6FD6958428BFC5D500677F7A /* RootSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958328BFC5D500677F7A /* RootSignUpView.swift */; };
@@ -63,7 +63,7 @@
 		6FD695B928C12CA800677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
 		6FD695BA28C12CA800677F7A /* AccountScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* AccountScreenView.swift */; };
 		6FD695BB28C12CA800677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
-		6FD695BC28C12CA800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD695BC28C12CA800677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */; };
 		6FD695C028C12CA800677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
 		6FD695C128C12CA800677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6956428BED72B00677F7A /* Assets.xcassets */; };
 		6FD695C228C12CA800677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
@@ -91,7 +91,7 @@
 		6FD6960728C1302600677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
 		6FD6960828C1302600677F7A /* AccountScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* AccountScreenView.swift */; };
 		6FD6960928C1302600677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
-		6FD6960A28C1302600677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD6960A28C1302600677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */; };
 		6FD6960E28C1302600677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
 		6FD6961028C1302600677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
 		6FD6961728C1318700677F7A /* FCEBM-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6961628C1318700677F7A /* FCEBM-Info.plist */; };
@@ -120,7 +120,7 @@
 		6FD6963228C131C800677F7A /* HomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6955928BED72A00677F7A /* HomeWebView.swift */; };
 		6FD6963328C131C800677F7A /* AccountScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6958128BEE4AA00677F7A /* AccountScreenView.swift */; };
 		6FD6963428C131C800677F7A /* AddressRegistryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6959D28C0462000677F7A /* AddressRegistryScreenView.swift */; };
-		6FD6963528C131C800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */; };
+		6FD6963528C131C800677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */; };
 		6FD6963928C131C800677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
 		6FD6963B28C131C800677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
 		6FD6964328C1322A00677F7A /* SSFC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964228C1322A00677F7A /* SSFC-Info.plist */; };
@@ -130,10 +130,6 @@
 		6FD6964C28C1333D00677F7A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964A28C1333D00677F7A /* about.html */; };
 		6FD6965028C1334B00677F7A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964E28C1334B00677F7A /* about.html */; };
 		6FD6965128C1334B00677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6964F28C1334B00677F7A /* Assets.xcassets */; };
-		6FD6965328C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
-		6FD6965428C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
-		6FD6965528C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
-		6FD6965628C1515700677F7A /* RootEventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965228C1515600677F7A /* RootEventScreenView.swift */; };
 		6FD6965828C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
 		6FD6965928C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
 		6FD6965A28C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
@@ -238,6 +234,18 @@
 		6FD696E328C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
 		6FD696E428C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
 		6FD696E528C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
+		6FD696E728C54C6300677F7A /* SlidingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E628C54C6300677F7A /* SlidingTabView.swift */; };
+		6FD696E828C54C6300677F7A /* SlidingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E628C54C6300677F7A /* SlidingTabView.swift */; };
+		6FD696E928C54C6300677F7A /* SlidingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E628C54C6300677F7A /* SlidingTabView.swift */; };
+		6FD696EA28C54C6300677F7A /* SlidingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E628C54C6300677F7A /* SlidingTabView.swift */; };
+		6FD696EC28C5506900677F7A /* PostScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696EB28C5506900677F7A /* PostScreenView.swift */; };
+		6FD696ED28C5506900677F7A /* PostScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696EB28C5506900677F7A /* PostScreenView.swift */; };
+		6FD696EE28C5506900677F7A /* PostScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696EB28C5506900677F7A /* PostScreenView.swift */; };
+		6FD696EF28C5506900677F7A /* PostScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696EB28C5506900677F7A /* PostScreenView.swift */; };
+		6FD696F128C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
+		6FD696F228C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
+		6FD696F328C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
+		6FD696F428C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
 		867E97206B7E8E15D5E98BD5 /* Pods_MyClubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93454E2246056047FCE5213 /* Pods_MyClubApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -264,7 +272,7 @@
 		6FD6956428BED72B00677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD6956728BED72B00677F7A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6FD6957828BEDB9800677F7A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenView.swift; sourceTree = "<group>"; };
+		6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootEventScreenView.swift; sourceTree = "<group>"; };
 		6FD6957E28BEE41D00677F7A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		6FD6958128BEE4AA00677F7A /* AccountScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenView.swift; sourceTree = "<group>"; };
 		6FD6958328BFC5D500677F7A /* RootSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSignUpView.swift; sourceTree = "<group>"; };
@@ -289,7 +297,6 @@
 		6FD6964A28C1333D00677F7A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		6FD6964E28C1334B00677F7A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		6FD6964F28C1334B00677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6FD6965228C1515600677F7A /* RootEventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootEventScreenView.swift; sourceTree = "<group>"; };
 		6FD6965728C1516D00677F7A /* HistoricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricView.swift; sourceTree = "<group>"; };
 		6FD6965C28C1518000677F7A /* GroupDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDashboardView.swift; sourceTree = "<group>"; };
 		6FD6966128C1518F00677F7A /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -316,6 +323,9 @@
 		6FD696D728C4461900677F7A /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberEventView.swift; sourceTree = "<group>"; };
 		6FD696E128C44C8D00677F7A /* EventMemberVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMemberVM.swift; sourceTree = "<group>"; };
+		6FD696E628C54C6300677F7A /* SlidingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabView.swift; sourceTree = "<group>"; };
+		6FD696EB28C5506900677F7A /* PostScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScreenView.swift; sourceTree = "<group>"; };
+		6FD696F028C5509800677F7A /* EventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenView.swift; sourceTree = "<group>"; };
 		7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCEBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676CCA94E7898C7ADFCCCA4 /* Pods-MyClubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClubApp.debug.xcconfig"; path = "Target Support Files/Pods-MyClubApp/Pods-MyClubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9A088568CC0FB4680155649E /* Pods_UJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -523,6 +533,7 @@
 		6FD6957A28BEE3BB00677F7A /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */,
 				6FD696CC28C443D000677F7A /* Cards */,
 				6FD6966628C1589000677F7A /* TabEvents */,
 				6FD6965728C1516D00677F7A /* HistoricView.swift */,
@@ -562,6 +573,7 @@
 				6FD6958D28C02AFF00677F7A /* EntryTextFieldView.swift */,
 				6FD6959328C030B200677F7A /* ItemButtonStyle.swift */,
 				6FD6959F28C0475700677F7A /* DatePickerTextField.swift */,
+				6FD696E628C54C6300677F7A /* SlidingTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -634,9 +646,9 @@
 		6FD6966628C1589000677F7A /* TabEvents */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6965228C1515600677F7A /* RootEventScreenView.swift */,
-				6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */,
 				6FD696C728C441A300677F7A /* EventHomeScreenView.swift */,
+				6FD696EB28C5506900677F7A /* PostScreenView.swift */,
+				6FD696F028C5509800677F7A /* EventScreenView.swift */,
 			);
 			path = TabEvents;
 			sourceTree = "<group>";
@@ -1114,16 +1126,18 @@
 				6FD6956A28BED72B00677F7A /* OnBoardingView.swift in Sources */,
 				6FD6967D28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD6959928C036A900677F7A /* Member.swift in Sources */,
+				6FD696E728C54C6300677F7A /* SlidingTabView.swift in Sources */,
 				6FD696DD28C4472D00677F7A /* AddMemberEventView.swift in Sources */,
 				6FD696B028C42E5300677F7A /* EventMember.swift in Sources */,
 				6FD6958828BFC6A300677F7A /* CivilRegistryScreenView.swift in Sources */,
 				6FD696D828C4461900677F7A /* EventDetailView.swift in Sources */,
-				6FD6965328C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6958628BFC67F00677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AB28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696F128C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696CE28C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD696EC28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD6956D28BED72B00677F7A /* BaseView.swift in Sources */,
 				6FD696D328C444FD00677F7A /* String+Shortcuts.swift in Sources */,
 				6FD696C328C43F0500677F7A /* EventListVM.swift in Sources */,
@@ -1138,7 +1152,7 @@
 				6FD6956928BED72B00677F7A /* HomeWebView.swift in Sources */,
 				6FD6958228BEE4AA00677F7A /* AccountScreenView.swift in Sources */,
 				6FD6959E28C0462000677F7A /* AddressRegistryScreenView.swift in Sources */,
-				6FD6957C28BEE3DE00677F7A /* EventScreenView.swift in Sources */,
+				6FD6957C28BEE3DE00677F7A /* RootEventScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1172,16 +1186,18 @@
 				6FD695B028C12CA800677F7A /* OnBoardingView.swift in Sources */,
 				6FD6967E28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD695B128C12CA800677F7A /* Member.swift in Sources */,
+				6FD696E828C54C6300677F7A /* SlidingTabView.swift in Sources */,
 				6FD696DE28C4472D00677F7A /* AddMemberEventView.swift in Sources */,
 				6FD696B128C42E5400677F7A /* EventMember.swift in Sources */,
 				6FD695B228C12CA800677F7A /* CivilRegistryScreenView.swift in Sources */,
 				6FD696D928C4461900677F7A /* EventDetailView.swift in Sources */,
-				6FD6965428C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD695B328C12CA800677F7A /* EmailSignUpView.swift in Sources */,
 				6FD695B428C12CA800677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AC28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696F228C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696CF28C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD696ED28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD695B528C12CA800677F7A /* BaseView.swift in Sources */,
 				6FD696D428C444FD00677F7A /* String+Shortcuts.swift in Sources */,
 				6FD696C428C43F0500677F7A /* EventListVM.swift in Sources */,
@@ -1196,7 +1212,7 @@
 				6FD695B928C12CA800677F7A /* HomeWebView.swift in Sources */,
 				6FD695BA28C12CA800677F7A /* AccountScreenView.swift in Sources */,
 				6FD695BB28C12CA800677F7A /* AddressRegistryScreenView.swift in Sources */,
-				6FD695BC28C12CA800677F7A /* EventScreenView.swift in Sources */,
+				6FD695BC28C12CA800677F7A /* RootEventScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1230,16 +1246,18 @@
 				6FD695FE28C1302600677F7A /* OnBoardingView.swift in Sources */,
 				6FD6967F28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD695FF28C1302600677F7A /* Member.swift in Sources */,
+				6FD696E928C54C6300677F7A /* SlidingTabView.swift in Sources */,
 				6FD696DF28C4472D00677F7A /* AddMemberEventView.swift in Sources */,
 				6FD696B228C42E5400677F7A /* EventMember.swift in Sources */,
 				6FD6960028C1302600677F7A /* CivilRegistryScreenView.swift in Sources */,
 				6FD696DA28C4461900677F7A /* EventDetailView.swift in Sources */,
-				6FD6965528C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6960128C1302600677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6960228C1302600677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AD28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696F328C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696D028C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD696EE28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD6960328C1302600677F7A /* BaseView.swift in Sources */,
 				6FD696D528C444FD00677F7A /* String+Shortcuts.swift in Sources */,
 				6FD696C528C43F0500677F7A /* EventListVM.swift in Sources */,
@@ -1254,7 +1272,7 @@
 				6FD6960728C1302600677F7A /* HomeWebView.swift in Sources */,
 				6FD6960828C1302600677F7A /* AccountScreenView.swift in Sources */,
 				6FD6960928C1302600677F7A /* AddressRegistryScreenView.swift in Sources */,
-				6FD6960A28C1302600677F7A /* EventScreenView.swift in Sources */,
+				6FD6960A28C1302600677F7A /* RootEventScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1288,16 +1306,18 @@
 				6FD6962928C131C800677F7A /* OnBoardingView.swift in Sources */,
 				6FD6968028C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD6962A28C131C800677F7A /* Member.swift in Sources */,
+				6FD696EA28C54C6300677F7A /* SlidingTabView.swift in Sources */,
 				6FD696E028C4472D00677F7A /* AddMemberEventView.swift in Sources */,
 				6FD696B328C42E5400677F7A /* EventMember.swift in Sources */,
 				6FD6962B28C131C800677F7A /* CivilRegistryScreenView.swift in Sources */,
 				6FD696DB28C4461900677F7A /* EventDetailView.swift in Sources */,
-				6FD6965628C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6962C28C131C800677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6962D28C131C800677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966528C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AE28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696F428C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696D128C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD696EF28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD6962E28C131C800677F7A /* BaseView.swift in Sources */,
 				6FD696D628C444FD00677F7A /* String+Shortcuts.swift in Sources */,
 				6FD696C628C43F0500677F7A /* EventListVM.swift in Sources */,
@@ -1312,7 +1332,7 @@
 				6FD6963228C131C800677F7A /* HomeWebView.swift in Sources */,
 				6FD6963328C131C800677F7A /* AccountScreenView.swift in Sources */,
 				6FD6963428C131C800677F7A /* AddressRegistryScreenView.swift in Sources */,
-				6FD6963528C131C800677F7A /* EventScreenView.swift in Sources */,
+				6FD6963528C131C800677F7A /* RootEventScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
