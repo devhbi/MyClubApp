@@ -41,7 +41,6 @@ struct Member: Codable, Identifiable, Hashable {
     }
     
     private enum CodingKeys: String, CodingKey {
-//        case id = "id"
         case firstname = "prenom"
         case lastname = "nom"
         case email = "email"

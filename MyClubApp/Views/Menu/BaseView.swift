@@ -13,7 +13,7 @@ struct BaseView: View {
     @EnvironmentObject var presentedView: HomeViewController
     @EnvironmentObject var presentedSignUpView: SignUpViewController
     @EnvironmentObject var authSession: LoginSessionController
-    @StateObject var userVM = CreateNewUserViewModel()
+    @StateObject var memberVM = MemberVM()
     
     var body: some View {
         
@@ -108,7 +108,7 @@ extension BaseView  {
                         let clubUrl: String = try! Configuration.value(for:"MY_CLUB_WEB_URL")
                         HomeWebView(url: URL(string: clubUrl)!)
                     case .login:
-                    SignInScreenView(userVM: self.userVM)
+                        SignInScreenView(memberVM: self.memberVM)
                     case .about:
                         AboutView()
                     case .event:
@@ -123,7 +123,7 @@ extension BaseView  {
             }
             else {
                 if presentedView.currentView == .login {
-                    SignInScreenView(userVM: self.userVM)
+                    SignInScreenView(memberVM: self.memberVM)
                 }
                 else {
                     RootSignUpView()

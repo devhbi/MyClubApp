@@ -1,25 +1,17 @@
 //
-//  CreateNewUserViewModel.swift
+//  MemberVM.swift
 //  MyClubApp
 //
-//  Created by Honoré BIZAGWIRA on 01/09/2022.
+//  Created by Honoré BIZAGWIRA on 03/09/2022.
 //
 
 import Foundation
 import Firebase
 
-final class CreateNewUserViewModel: ObservableObject {
-    @Published var member: Member = .empty
-    @Published var results = [Member]()
+class MemberVM: ObservableObject, Identifiable {
     
-    private lazy var databasePath: DatabaseReference? = {
-        let dbname: String = try! Configuration.value(for:"MY_CLUB_DATABASE_NAME")
-        let ref = Database.database()
-            .reference()
-            .child(dbname)
-            .child("users")
-        return ref
-    }()
+    let d: String = UUID().uuidString
+    @Published var member: Member = .empty
     
     var isValide: Bool {
         !self.member.firstname.isEmpty &&
@@ -28,9 +20,64 @@ final class CreateNewUserViewModel: ObservableObject {
         !self.member.city.isEmpty &&
         !self.member.street.isEmpty
     }
+    
+    init(member: Member = .empty) {
+        self.member = member
+    }
+    
+    func update() -> Bool {
+        var success = true
+        let dbUserRef: DatabaseReference = {
+            let dbname: String = try! Configuration.value(for:"MY_CLUB_DATABASE_NAME")
+            let ref = Database.database()
+                .reference()
+                .child(dbname)
+                .child("users")
+                .child(self.member.id)
+            return ref
+        }()
+        print(self.member.id)
+        let dataDict = self.member.dictionary
+        // 2
+        dbUserRef.setValue(dataDict) { (error, ref) in
+            if let error = error {
+                success = false
+                assertionFailure(error.localizedDescription)
+                return
+            }
+
+            // 3
+            DispatchQueue.main.async {
+                dbUserRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let userDict = snapshot.value as? [String : Any] {
+                        print(userDict.debugDescription)
+                    }
+                })
+            }
+        }
+        return success
+    }
 }
 
-extension CreateNewUserViewModel {
+extension MemberVM {
+    func signUp(handle:@escaping ((AuthDataResult?, Error?) -> Void)) {
+        AuthenticationService.signUp(email: self.member.email, password: self.member.password, handle: handle)
+    }
+
+    func signIn(handle:@escaping ((AuthDataResult?, Error?) -> Void)) {
+        AuthenticationService.signIn(email: self.member.email, password: self.member.password, handle: handle)
+    }
+    
+    func reset(callback: ((Error?) -> ())? = nil) {
+        AuthenticationService.reset(withEmail: self.member.email)
+    }
+    
+    func signOut(){
+        AuthenticationService.signOut()
+    }
+}
+
+extension MemberVM {
     
     // MARK: Validations Functions
     func passwordsMatch() -> Bool {

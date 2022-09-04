@@ -10,7 +10,7 @@ import SwiftUI
 struct EmailSignUpView: View {
     @EnvironmentObject var presentedSignUpView: SignUpViewController
     
-    @StateObject var vm : CreateNewUserViewModel
+    @StateObject var vm : MemberVM
     
     var body: some View {
         ZStack (alignment: .topTrailing) {

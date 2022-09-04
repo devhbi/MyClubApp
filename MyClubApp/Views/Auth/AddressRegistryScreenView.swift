@@ -11,7 +11,7 @@ struct AddressRegistryScreenView: View {
     @EnvironmentObject var presentedSignUpView: SignUpViewController
     @EnvironmentObject var presentedView: HomeViewController
     
-    @StateObject var vm: CreateNewUserViewModel
+    @StateObject var vm: MemberVM
     
     var body: some View {
         ZStack (alignment: .topTrailing) {
@@ -70,6 +70,6 @@ struct AddressRegistryScreenView: View {
 
 struct CompleteRegisterScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        AddressRegistryScreenView(vm: CreateNewUserViewModel())
+        AddressRegistryScreenView(vm: MemberVM())
     }
 }

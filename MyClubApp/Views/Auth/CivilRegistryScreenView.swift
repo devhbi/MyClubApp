@@ -10,7 +10,7 @@ import SwiftUI
 struct CivilRegistryScreenView: View {
     @EnvironmentObject var presentedSignUpView: SignUpViewController
     
-    @StateObject var vm: CreateNewUserViewModel
+    @StateObject var vm: MemberVM
     var body: some View {
             ZStack (alignment: .topTrailing) {
                 GeometryReader { _ in
@@ -53,6 +53,6 @@ struct CivilRegistryScreenView: View {
 
 struct AddressSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        CivilRegistryScreenView(vm: CreateNewUserViewModel())
+        CivilRegistryScreenView(vm: MemberVM())
     }
 }

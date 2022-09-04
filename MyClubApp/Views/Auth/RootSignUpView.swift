@@ -10,16 +10,16 @@ import SwiftUI
 struct RootSignUpView: View {
     @EnvironmentObject var presentedSignUpView: SignUpViewController
     
-    @StateObject var userViewModel = CreateNewUserViewModel()
+    @StateObject var memberVM = MemberVM()
     
     var body: some View {
         switch self.presentedSignUpView.currentPage {
             case .email:
-                EmailSignUpView(vm: self.userViewModel)
+                EmailSignUpView(vm: self.memberVM)
             case .civil:
-                CivilRegistryScreenView(vm: self.userViewModel)
+                CivilRegistryScreenView(vm: self.memberVM)
             case .address:
-                AddressRegistryScreenView(vm:  self.userViewModel)
+                AddressRegistryScreenView(vm:  self.memberVM)
             case .created:
                 let clubUrl: String = try! Configuration.value(for:"MY_CLUB_WEB_URL")
                 HomeWebView(url: URL(string: clubUrl)!)

@@ -11,6 +11,7 @@ struct MenuView: View {
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var presentedView: HomeViewController
     @EnvironmentObject var authSession: LoginSessionController
+    @EnvironmentObject var accountVM: AccountViewModel
     @Binding var dark:Bool
     @Binding var show:Bool
     var body: some View {
@@ -267,12 +268,31 @@ extension MenuView  {
                 }
             }){
                 HStack(spacing: 22) {
-                    Image(systemName: "laptopcomputer")                    .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 22, height: 22)
-                    Text("Administrateur")
-                        .font(.system(size: 14, weight: .semibold))
+                    if self.accountVM.isSuperAdministrator {
+                        Image(systemName: "laptopcomputer")                    .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 22, height: 22)
+                        Text("Administrateur")
+                            .font(.system(size: 14, weight: .semibold))
+                    }
+                    else if accountVM.isAdministrator {
+                        Image(systemName: "person.2.circle")                    .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 22, height: 22)
+                        Text("Responsable")
+                            .font(.system(size: 14, weight: .semibold))
+                    }
+                    else if accountVM.isEducator {
+                        Image(systemName: "person.2.circle")                    .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 22, height: 22)
+                        Text("Éducateur")
+                            .font(.system(size: 14, weight: .semibold))
+                    }
+                        
                     Spacer()
                 }
             }
@@ -312,11 +332,12 @@ extension MenuView  {
         }
     }
 }
-/*
-struct MenuContent_Previews: PreviewProvider {
+
+struct MenuView_Previews: PreviewProvider {
+    @State static var dark: Bool = true
+    @State static var show: Bool = true
     static var previews: some View {
-        MenuContent(dark: false, show: false)
+        MenuView(dark: $dark, show: $show)
     }
 }
-*/
 

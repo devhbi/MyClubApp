@@ -10,8 +10,7 @@ import SwiftUI
 import Firebase
 
 class AccountViewModel: ObservableObject {
-    @Published var result: Member = .empty
-    static let shared = AccountViewModel()
+    @Published var member: Member = .empty
     
     private lazy var databasePath: DatabaseReference? = {
         let dbname: String = try! Configuration.value(for:"MY_CLUB_DATABASE_NAME")
@@ -29,47 +28,47 @@ class AccountViewModel: ObservableObject {
 
 extension AccountViewModel {
     var uid: String {
-        return self.result.id
+        return self.member.id
     }
     
     var firstname: String {
-        return self.result.firstname
+        return self.member.firstname
     }
     
     var lastname: String {
-        return self.result.lastname
+        return self.member.lastname
     }
     
     var fullname: String {
-        return self.result.firstname + " " + self.result.lastname
+        return self.member.firstname + " " + self.member.lastname
     }
     
     var username: String {
-        return self.result.firstname
+        return self.member.firstname
     }
 
     var email: String {
-        return self.result.email
+        return self.member.email
     }
     
     var birthDate: String {
-        return self.result.birthDate?.toString(format: "dd/MM/yyyy") ?? ""
+        return self.member.birthDate?.toString(format: "dd/MM/yyyy") ?? ""
     }
     
     var phoneNumber: String {
-        return self.result.phone
+        return self.member.phone
     }
 
     var city: String {
-        return self.result.city
+        return self.member.city
     }
 
     var streetAddress: String {
-        return self.result.street
+        return self.member.street
     }
     
     var postalCode: Int32 {
-        return Int32(self.result.zipcode) ?? 999
+        return Int32(self.member.zipcode) ?? 999
     }
     
     var role: String {
@@ -88,7 +87,7 @@ extension AccountViewModel {
     }
     
     var initials: String {
-        let fullname = self.result.firstname + " " + self.result.lastname
+        let fullname = self.member.firstname + " " + self.member.lastname
         return fullname.components(separatedBy: " ").reduce("") { ($0 == "" ? "" : "\($0.first!)") + ($1 == "" ? "" : "\($1.first!)") }.uppercased()
     }
     
@@ -105,14 +104,14 @@ extension AccountViewModel {
         
         let dbRef = databasePath.child("users/\(userId)")
         
-        self.result.id = userId
+        self.member.id = userId
         dbRef.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let value = snapshot.value as? [String: Any] else { return }
             
             do {
                 let data = try JSONSerialization.data(withJSONObject: value, options: [])
-                self.result = try JSONDecoder().decode(Member.self, from: data)
-                self.result.id = userId
+                self.member = try JSONDecoder().decode(Member.self, from: data)
+                self.member.id = userId
             }
             catch {
                 print(error)
@@ -124,18 +123,18 @@ extension AccountViewModel {
 
 extension AccountViewModel {
     var isSuperAdministrator: Bool {
-        return self.result.isSuperAdministrator
+        return self.member.isSuperAdministrator
     }
     
     var isAdministrator: Bool {
-        return self.result.isAdministrator
+        return self.member.isAdministrator
     }
     
     var isEducator: Bool {
-        return self.result.isEducator
+        return self.member.isEducator
     }
     
     var isMember: Bool {
-        return self.result.isMember
+        return self.member.isMember
     }
 }
