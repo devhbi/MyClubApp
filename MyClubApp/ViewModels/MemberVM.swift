@@ -13,7 +13,7 @@ class MemberVM: ObservableObject, Identifiable {
     let d: String = UUID().uuidString
     @Published var member: Member = .empty
     
-    var isValide: Bool {
+    var isValid: Bool {
         !self.member.firstname.isEmpty &&
         !self.member.lastname.isEmpty &&
         !self.member.password.isEmpty &&

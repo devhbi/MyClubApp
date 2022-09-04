@@ -194,6 +194,50 @@
 		6FD696A728C4039F00677F7A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696A528C4039F00677F7A /* AuthenticationService.swift */; };
 		6FD696A828C4039F00677F7A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696A528C4039F00677F7A /* AuthenticationService.swift */; };
 		6FD696A928C4039F00677F7A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696A528C4039F00677F7A /* AuthenticationService.swift */; };
+		6FD696AB28C42D9300677F7A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AA28C42D9300677F7A /* Event.swift */; };
+		6FD696AC28C42D9300677F7A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AA28C42D9300677F7A /* Event.swift */; };
+		6FD696AD28C42D9300677F7A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AA28C42D9300677F7A /* Event.swift */; };
+		6FD696AE28C42D9300677F7A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AA28C42D9300677F7A /* Event.swift */; };
+		6FD696B028C42E5300677F7A /* EventMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AF28C42E5300677F7A /* EventMember.swift */; };
+		6FD696B128C42E5400677F7A /* EventMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AF28C42E5300677F7A /* EventMember.swift */; };
+		6FD696B228C42E5400677F7A /* EventMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AF28C42E5300677F7A /* EventMember.swift */; };
+		6FD696B328C42E5400677F7A /* EventMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696AF28C42E5300677F7A /* EventMember.swift */; };
+		6FD696B528C42ED200677F7A /* GroupMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696B428C42ED200677F7A /* GroupMember.swift */; };
+		6FD696B628C42ED200677F7A /* GroupMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696B428C42ED200677F7A /* GroupMember.swift */; };
+		6FD696B728C42ED200677F7A /* GroupMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696B428C42ED200677F7A /* GroupMember.swift */; };
+		6FD696B828C42ED200677F7A /* GroupMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696B428C42ED200677F7A /* GroupMember.swift */; };
+		6FD696BE28C432D000677F7A /* EventVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696BD28C432D000677F7A /* EventVM.swift */; };
+		6FD696BF28C432D000677F7A /* EventVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696BD28C432D000677F7A /* EventVM.swift */; };
+		6FD696C028C432D000677F7A /* EventVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696BD28C432D000677F7A /* EventVM.swift */; };
+		6FD696C128C432D000677F7A /* EventVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696BD28C432D000677F7A /* EventVM.swift */; };
+		6FD696C328C43F0500677F7A /* EventListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C228C43F0500677F7A /* EventListVM.swift */; };
+		6FD696C428C43F0500677F7A /* EventListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C228C43F0500677F7A /* EventListVM.swift */; };
+		6FD696C528C43F0500677F7A /* EventListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C228C43F0500677F7A /* EventListVM.swift */; };
+		6FD696C628C43F0500677F7A /* EventListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C228C43F0500677F7A /* EventListVM.swift */; };
+		6FD696C828C441A300677F7A /* EventHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C728C441A300677F7A /* EventHomeScreenView.swift */; };
+		6FD696C928C441A300677F7A /* EventHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C728C441A300677F7A /* EventHomeScreenView.swift */; };
+		6FD696CA28C441A300677F7A /* EventHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C728C441A300677F7A /* EventHomeScreenView.swift */; };
+		6FD696CB28C441A300677F7A /* EventHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696C728C441A300677F7A /* EventHomeScreenView.swift */; };
+		6FD696CE28C443EF00677F7A /* EventItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696CD28C443EF00677F7A /* EventItemCardView.swift */; };
+		6FD696CF28C443EF00677F7A /* EventItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696CD28C443EF00677F7A /* EventItemCardView.swift */; };
+		6FD696D028C443EF00677F7A /* EventItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696CD28C443EF00677F7A /* EventItemCardView.swift */; };
+		6FD696D128C443EF00677F7A /* EventItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696CD28C443EF00677F7A /* EventItemCardView.swift */; };
+		6FD696D328C444FD00677F7A /* String+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D228C444FD00677F7A /* String+Shortcuts.swift */; };
+		6FD696D428C444FD00677F7A /* String+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D228C444FD00677F7A /* String+Shortcuts.swift */; };
+		6FD696D528C444FD00677F7A /* String+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D228C444FD00677F7A /* String+Shortcuts.swift */; };
+		6FD696D628C444FD00677F7A /* String+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D228C444FD00677F7A /* String+Shortcuts.swift */; };
+		6FD696D828C4461900677F7A /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D728C4461900677F7A /* EventDetailView.swift */; };
+		6FD696D928C4461900677F7A /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D728C4461900677F7A /* EventDetailView.swift */; };
+		6FD696DA28C4461900677F7A /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D728C4461900677F7A /* EventDetailView.swift */; };
+		6FD696DB28C4461900677F7A /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696D728C4461900677F7A /* EventDetailView.swift */; };
+		6FD696DD28C4472D00677F7A /* AddMemberEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */; };
+		6FD696DE28C4472D00677F7A /* AddMemberEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */; };
+		6FD696DF28C4472D00677F7A /* AddMemberEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */; };
+		6FD696E028C4472D00677F7A /* AddMemberEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */; };
+		6FD696E228C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
+		6FD696E328C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
+		6FD696E428C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
+		6FD696E528C44C8D00677F7A /* EventMemberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696E128C44C8D00677F7A /* EventMemberVM.swift */; };
 		867E97206B7E8E15D5E98BD5 /* Pods_MyClubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93454E2246056047FCE5213 /* Pods_MyClubApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -261,6 +305,17 @@
 		6FD6969B28C3EF5E00677F7A /* MemberVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberVM.swift; sourceTree = "<group>"; };
 		6FD696A028C3EF6E00677F7A /* MemberListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListVM.swift; sourceTree = "<group>"; };
 		6FD696A528C4039F00677F7A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		6FD696AA28C42D9300677F7A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		6FD696AF28C42E5300677F7A /* EventMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMember.swift; sourceTree = "<group>"; };
+		6FD696B428C42ED200677F7A /* GroupMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMember.swift; sourceTree = "<group>"; };
+		6FD696BD28C432D000677F7A /* EventVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVM.swift; sourceTree = "<group>"; };
+		6FD696C228C43F0500677F7A /* EventListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListVM.swift; sourceTree = "<group>"; };
+		6FD696C728C441A300677F7A /* EventHomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHomeScreenView.swift; sourceTree = "<group>"; };
+		6FD696CD28C443EF00677F7A /* EventItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemCardView.swift; sourceTree = "<group>"; };
+		6FD696D228C444FD00677F7A /* String+Shortcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Shortcuts.swift"; sourceTree = "<group>"; };
+		6FD696D728C4461900677F7A /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberEventView.swift; sourceTree = "<group>"; };
+		6FD696E128C44C8D00677F7A /* EventMemberVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMemberVM.swift; sourceTree = "<group>"; };
 		7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCEBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676CCA94E7898C7ADFCCCA4 /* Pods-MyClubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClubApp.debug.xcconfig"; path = "Target Support Files/Pods-MyClubApp/Pods-MyClubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9A088568CC0FB4680155649E /* Pods_UJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -423,8 +478,10 @@
 		6FD6956028BED72A00677F7A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6958F28C02D1900677F7A /* AuthViewModel.swift */,
-				6FD6959828C036A900677F7A /* Member.swift */,
+				6FD696BC28C432B200677F7A /* Auth */,
+				6FD696BB28C432A000677F7A /* Member */,
+				6FD696BA28C4328D00677F7A /* Group */,
+				6FD696B928C4327700677F7A /* Event */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -466,6 +523,7 @@
 		6FD6957A28BEE3BB00677F7A /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				6FD696CC28C443D000677F7A /* Cards */,
 				6FD6966628C1589000677F7A /* TabEvents */,
 				6FD6965728C1516D00677F7A /* HistoricView.swift */,
 				6FD6965C28C1518000677F7A /* GroupDashboardView.swift */,
@@ -514,6 +572,9 @@
 				6FD6967C28C2926900677F7A /* AccountViewModel.swift */,
 				6FD6969B28C3EF5E00677F7A /* MemberVM.swift */,
 				6FD696A028C3EF6E00677F7A /* MemberListVM.swift */,
+				6FD696BD28C432D000677F7A /* EventVM.swift */,
+				6FD696C228C43F0500677F7A /* EventListVM.swift */,
+				6FD696E128C44C8D00677F7A /* EventMemberVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -575,6 +636,7 @@
 			children = (
 				6FD6965228C1515600677F7A /* RootEventScreenView.swift */,
 				6FD6957B28BEE3DE00677F7A /* EventScreenView.swift */,
+				6FD696C728C441A300677F7A /* EventHomeScreenView.swift */,
 			);
 			path = TabEvents;
 			sourceTree = "<group>";
@@ -592,9 +654,53 @@
 		6FD6968128C2931100677F7A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6FD696D228C444FD00677F7A /* String+Shortcuts.swift */,
 				6FD6968228C2937D00677F7A /* Data+String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6FD696B928C4327700677F7A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				6FD696AF28C42E5300677F7A /* EventMember.swift */,
+				6FD696AA28C42D9300677F7A /* Event.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		6FD696BA28C4328D00677F7A /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				6FD696B428C42ED200677F7A /* GroupMember.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		6FD696BB28C432A000677F7A /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6959828C036A900677F7A /* Member.swift */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		6FD696BC28C432B200677F7A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6958F28C02D1900677F7A /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6FD696CC28C443D000677F7A /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				6FD696CD28C443EF00677F7A /* EventItemCardView.swift */,
+				6FD696D728C4461900677F7A /* EventDetailView.swift */,
+				6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		CA796835D665DAE107F67A46 /* Pods */ = {
@@ -984,6 +1090,7 @@
 			files = (
 				6FD6959428C030B200677F7A /* ItemButtonStyle.swift in Sources */,
 				6FD6959028C02D1900677F7A /* AuthViewModel.swift in Sources */,
+				6FD696B528C42ED200677F7A /* GroupMember.swift in Sources */,
 				6FD6969C28C3EF5E00677F7A /* MemberVM.swift in Sources */,
 				6FD6952F28BEBE4600677F7A /* Persistence.swift in Sources */,
 				6FD6957128BED72B00677F7A /* WebViewController.swift in Sources */,
@@ -996,6 +1103,7 @@
 				6FD696A628C4039F00677F7A /* AuthenticationService.swift in Sources */,
 				6FD6956C28BED72B00677F7A /* MenuView.swift in Sources */,
 				6FD695A028C0475700677F7A /* DatePickerTextField.swift in Sources */,
+				6FD696E228C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969228C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */,
 				6FD6966928C16C6800677F7A /* UserListScreenView.swift in Sources */,
@@ -1006,12 +1114,21 @@
 				6FD6956A28BED72B00677F7A /* OnBoardingView.swift in Sources */,
 				6FD6967D28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD6959928C036A900677F7A /* Member.swift in Sources */,
+				6FD696DD28C4472D00677F7A /* AddMemberEventView.swift in Sources */,
+				6FD696B028C42E5300677F7A /* EventMember.swift in Sources */,
 				6FD6958828BFC6A300677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD696D828C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6965328C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6958628BFC67F00677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD696AB28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696CE28C443EF00677F7A /* EventItemCardView.swift in Sources */,
 				6FD6956D28BED72B00677F7A /* BaseView.swift in Sources */,
+				6FD696D328C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD696C328C43F0500677F7A /* EventListVM.swift in Sources */,
+				6FD696C828C441A300677F7A /* EventHomeScreenView.swift in Sources */,
+				6FD696BE28C432D000677F7A /* EventVM.swift in Sources */,
 				6FD6958E28C02AFF00677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967328C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6953228BEBE4600677F7A /* MyClubApp.xcdatamodeld in Sources */,
@@ -1031,6 +1148,7 @@
 			files = (
 				6FD695A428C12CA800677F7A /* ItemButtonStyle.swift in Sources */,
 				6FD695A528C12CA800677F7A /* AuthViewModel.swift in Sources */,
+				6FD696B628C42ED200677F7A /* GroupMember.swift in Sources */,
 				6FD6969D28C3EF5E00677F7A /* MemberVM.swift in Sources */,
 				6FD695A628C12CA800677F7A /* Persistence.swift in Sources */,
 				6FD695A728C12CA800677F7A /* WebViewController.swift in Sources */,
@@ -1043,6 +1161,7 @@
 				6FD696A728C4039F00677F7A /* AuthenticationService.swift in Sources */,
 				6FD695AA28C12CA800677F7A /* MenuView.swift in Sources */,
 				6FD695AB28C12CA800677F7A /* DatePickerTextField.swift in Sources */,
+				6FD696E328C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969328C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD695AC28C12CA800677F7A /* AboutView.swift in Sources */,
 				6FD6966A28C16C6800677F7A /* UserListScreenView.swift in Sources */,
@@ -1053,12 +1172,21 @@
 				6FD695B028C12CA800677F7A /* OnBoardingView.swift in Sources */,
 				6FD6967E28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD695B128C12CA800677F7A /* Member.swift in Sources */,
+				6FD696DE28C4472D00677F7A /* AddMemberEventView.swift in Sources */,
+				6FD696B128C42E5400677F7A /* EventMember.swift in Sources */,
 				6FD695B228C12CA800677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD696D928C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6965428C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD695B328C12CA800677F7A /* EmailSignUpView.swift in Sources */,
 				6FD695B428C12CA800677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD696AC28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696CF28C443EF00677F7A /* EventItemCardView.swift in Sources */,
 				6FD695B528C12CA800677F7A /* BaseView.swift in Sources */,
+				6FD696D428C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD696C428C43F0500677F7A /* EventListVM.swift in Sources */,
+				6FD696C928C441A300677F7A /* EventHomeScreenView.swift in Sources */,
+				6FD696BF28C432D000677F7A /* EventVM.swift in Sources */,
 				6FD695B628C12CA800677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967428C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD695B728C12CA800677F7A /* MyClubApp.xcdatamodeld in Sources */,
@@ -1078,6 +1206,7 @@
 			files = (
 				6FD695F228C1302600677F7A /* ItemButtonStyle.swift in Sources */,
 				6FD695F328C1302600677F7A /* AuthViewModel.swift in Sources */,
+				6FD696B728C42ED200677F7A /* GroupMember.swift in Sources */,
 				6FD6969E28C3EF5E00677F7A /* MemberVM.swift in Sources */,
 				6FD695F428C1302600677F7A /* Persistence.swift in Sources */,
 				6FD695F528C1302600677F7A /* WebViewController.swift in Sources */,
@@ -1090,6 +1219,7 @@
 				6FD696A828C4039F00677F7A /* AuthenticationService.swift in Sources */,
 				6FD695F828C1302600677F7A /* MenuView.swift in Sources */,
 				6FD695F928C1302600677F7A /* DatePickerTextField.swift in Sources */,
+				6FD696E428C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969428C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD695FA28C1302600677F7A /* AboutView.swift in Sources */,
 				6FD6966B28C16C6800677F7A /* UserListScreenView.swift in Sources */,
@@ -1100,12 +1230,21 @@
 				6FD695FE28C1302600677F7A /* OnBoardingView.swift in Sources */,
 				6FD6967F28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD695FF28C1302600677F7A /* Member.swift in Sources */,
+				6FD696DF28C4472D00677F7A /* AddMemberEventView.swift in Sources */,
+				6FD696B228C42E5400677F7A /* EventMember.swift in Sources */,
 				6FD6960028C1302600677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD696DA28C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6965528C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6960128C1302600677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6960228C1302600677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD696AD28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696D028C443EF00677F7A /* EventItemCardView.swift in Sources */,
 				6FD6960328C1302600677F7A /* BaseView.swift in Sources */,
+				6FD696D528C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD696C528C43F0500677F7A /* EventListVM.swift in Sources */,
+				6FD696CA28C441A300677F7A /* EventHomeScreenView.swift in Sources */,
+				6FD696C028C432D000677F7A /* EventVM.swift in Sources */,
 				6FD6960428C1302600677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967528C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6960528C1302600677F7A /* MyClubApp.xcdatamodeld in Sources */,
@@ -1125,6 +1264,7 @@
 			files = (
 				6FD6961D28C131C800677F7A /* ItemButtonStyle.swift in Sources */,
 				6FD6961E28C131C800677F7A /* AuthViewModel.swift in Sources */,
+				6FD696B828C42ED200677F7A /* GroupMember.swift in Sources */,
 				6FD6969F28C3EF5E00677F7A /* MemberVM.swift in Sources */,
 				6FD6961F28C131C800677F7A /* Persistence.swift in Sources */,
 				6FD6962028C131C800677F7A /* WebViewController.swift in Sources */,
@@ -1137,6 +1277,7 @@
 				6FD696A928C4039F00677F7A /* AuthenticationService.swift in Sources */,
 				6FD6962328C131C800677F7A /* MenuView.swift in Sources */,
 				6FD6962428C131C800677F7A /* DatePickerTextField.swift in Sources */,
+				6FD696E528C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969528C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD6962528C131C800677F7A /* AboutView.swift in Sources */,
 				6FD6966C28C16C6800677F7A /* UserListScreenView.swift in Sources */,
@@ -1147,12 +1288,21 @@
 				6FD6962928C131C800677F7A /* OnBoardingView.swift in Sources */,
 				6FD6968028C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD6962A28C131C800677F7A /* Member.swift in Sources */,
+				6FD696E028C4472D00677F7A /* AddMemberEventView.swift in Sources */,
+				6FD696B328C42E5400677F7A /* EventMember.swift in Sources */,
 				6FD6962B28C131C800677F7A /* CivilRegistryScreenView.swift in Sources */,
+				6FD696DB28C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6965628C1515700677F7A /* RootEventScreenView.swift in Sources */,
 				6FD6962C28C131C800677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6962D28C131C800677F7A /* SignUpViewController.swift in Sources */,
 				6FD6966528C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FD696AE28C42D9300677F7A /* Event.swift in Sources */,
+				6FD696D128C443EF00677F7A /* EventItemCardView.swift in Sources */,
 				6FD6962E28C131C800677F7A /* BaseView.swift in Sources */,
+				6FD696D628C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD696C628C43F0500677F7A /* EventListVM.swift in Sources */,
+				6FD696CB28C441A300677F7A /* EventHomeScreenView.swift in Sources */,
+				6FD696C128C432D000677F7A /* EventVM.swift in Sources */,
 				6FD6962F28C131C800677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967628C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6963028C131C800677F7A /* MyClubApp.xcdatamodeld in Sources */,

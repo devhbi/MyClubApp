@@ -11,6 +11,7 @@ import Firebase
 
 class AccountViewModel: ObservableObject {
     @Published var member: Member = .empty
+    static let shared = AccountViewModel()
     
     private lazy var databasePath: DatabaseReference? = {
         let dbname: String = try! Configuration.value(for:"MY_CLUB_DATABASE_NAME")

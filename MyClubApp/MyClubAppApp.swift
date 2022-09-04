@@ -10,6 +10,8 @@ import Firebase
 
 @main
 struct MyClubApp: App {
+    @StateObject var currentAccount = AccountViewModel.shared
+    
     init() {
         FirebaseApp.configure()
     }

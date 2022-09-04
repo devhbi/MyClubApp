@@ -18,7 +18,6 @@ struct CivilRegistryScreenView: View {
                         Text("Créer le compte")
                             .font(.system(size: 32, weight: .heavy))
                         
-                        
                         Text("Entrer votre nom complet")
                             .font(.system(size: 18, weight: .medium))
                             .foregroundColor(Color.gray)

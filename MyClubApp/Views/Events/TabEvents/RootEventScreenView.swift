@@ -9,7 +9,8 @@ import SwiftUI
 
 struct RootEventScreenView: View {
     var body: some View {
-        Text("ÉVÉNEMENTS")
+//        Text("ÉVÉNEMENTS")
+        EventHomeScreenView()
     }
 }
 
