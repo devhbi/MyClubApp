@@ -28,7 +28,7 @@ struct RootEventScreenView: View {
                     Image(systemName: "bell.fill")
                     Text("Historique")
                 }
-            GroupDashboardView()
+            RootGroupScreenView()
                 .tabItem {
                     Image(systemName: "person.2.circle")
                     Text("Groupes")

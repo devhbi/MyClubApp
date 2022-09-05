@@ -41,7 +41,7 @@ final class EventListVM: ObservableObject {
                 let data = try JSONSerialization.data(withJSONObject: value, options: [])
                 let dict = try JSONDecoder().decode([String: Event].self, from: data)
                 let events = dict.map {$0.value}.filter { !$0.members.isEmpty && $0.members.map{$0.id}[0] == userId }
-                self.eventVMs = dict.map {EventVM(event: $0.value)}
+                self.eventVMs = events.map {EventVM(event: $0)}
                 print(events)
             }
             catch {

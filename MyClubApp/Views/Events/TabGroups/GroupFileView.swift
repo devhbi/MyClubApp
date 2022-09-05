@@ -1,39 +1,40 @@
 //
-//  PostScreenView.swift
+//  GroupFileView.swift
 //  MyClubApp
 //
-//  Created by Honoré BIZAGWIRA on 04/09/2022.
+//  Created by Pole Star on 05/09/2022.
 //
 
 import SwiftUI
 
-struct PostScreenView: View {
+struct GroupFileView: View {
     var body: some View {
-        EmptyEventPostsView()
+        EmptyGroupFileView()
     }
 }
 
-struct PostScreenView_Previews: PreviewProvider {
+struct GroupFileView_Previews: PreviewProvider {
     static var previews: some View {
-        PostScreenView()
+        GroupFileView()
     }
 }
 
-struct EmptyEventPostsView: View {
+
+struct EmptyGroupFileView: View {
     var body: some View {
         VStack( alignment: .center){
-            Image(systemName: "pencil")
+            Image(systemName: "paperclip")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 64, height: 52)
                 .font(.title)
                 .foregroundColor(.gray)
             
-            Text("Pas de posts")
+            Text("Pas d'articles")
                 .font(.system(size: 20, weight: .black, design: .rounded))
                 .foregroundColor(.gray)
             
-            Text("Cliquer + pour créer un nouveau post")
+            Text("La prise en charge permet de stocker des fichiers au format PDF, Excel, Word et des liens.")
                 .font(.body)
                 .foregroundColor(.gray)
         }

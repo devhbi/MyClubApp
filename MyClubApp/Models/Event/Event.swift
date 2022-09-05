@@ -14,10 +14,8 @@ struct Event: Codable, Identifiable, Hashable {
     var name: String
     var group: String
     var startDate: Date
-//    var startTime: Date
     var startTime: String
     var endDate: Date
-//    var endTime: Date
     var endTime: String
     var link: String = ""
     var idAdministrateur: String
@@ -32,6 +30,8 @@ struct Event: Codable, Identifiable, Hashable {
     var idMatch: String = ""
     var type: EventType
     var visibility: Event.Visibility = Event.Visibility.epublic
+    var frequency: Event.ActionTimingType = Event.ActionTimingType.once
+    var typeAction: Event.ActionType = Event.ActionType.event
     var members: [EventMember]
     
 

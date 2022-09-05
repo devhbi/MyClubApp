@@ -10,12 +10,14 @@ import SwiftUI
 import SwiftUI
 
 struct EventScreenView: View {
+    @StateObject var presentedEventRouterView: CreateEventRouter = CreateEventRouter()
     @ObservedObject var eventListVM = EventListVM()
     @State var showAddEventSheetView: Bool = false
     @State private var numberOfRows = 1
     @EnvironmentObject var accountVM: AccountViewModel
     let spacing: CGFloat = 10
     @State private var selectedTabIndex = 0
+    
     var body: some View {
         let columns = Array(repeating: GridItem(.flexible(),  spacing: spacing), count: self.numberOfRows)
 
@@ -35,6 +37,13 @@ struct EventScreenView: View {
         }
         .navigationBarHidden(true)
         .onAppear (perform: eventListVM.load)
+        .fullScreenCover(isPresented: $showAddEventSheetView, onDismiss: {
+            withAnimation {
+                eventListVM.load()
+            }
+        }, content: {
+            CreateNewEventView(presentedView: presentedEventRouterView, eventListVM: eventListVM)
+        })
     }
 }
 

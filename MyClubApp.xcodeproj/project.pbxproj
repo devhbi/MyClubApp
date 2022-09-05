@@ -134,10 +134,10 @@
 		6FD6965928C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
 		6FD6965A28C1516D00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
 		6FD6965B28C1516E00677F7A /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965728C1516D00677F7A /* HistoricView.swift */; };
-		6FD6965D28C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
-		6FD6965E28C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
-		6FD6965F28C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
-		6FD6966028C1518000677F7A /* GroupDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* GroupDashboardView.swift */; };
+		6FD6965D28C1518000677F7A /* RootGroupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* RootGroupScreenView.swift */; };
+		6FD6965E28C1518000677F7A /* RootGroupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* RootGroupScreenView.swift */; };
+		6FD6965F28C1518000677F7A /* RootGroupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* RootGroupScreenView.swift */; };
+		6FD6966028C1518000677F7A /* RootGroupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6965C28C1518000677F7A /* RootGroupScreenView.swift */; };
 		6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
 		6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
 		6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6966128C1518F00677F7A /* MessagesView.swift */; };
@@ -246,6 +246,58 @@
 		6FD696F228C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
 		6FD696F328C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
 		6FD696F428C5509800677F7A /* EventScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F028C5509800677F7A /* EventScreenView.swift */; };
+		6FD696F728C555CB00677F7A /* GroupItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F628C555CB00677F7A /* GroupItemCardView.swift */; };
+		6FD696F828C555CB00677F7A /* GroupItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F628C555CB00677F7A /* GroupItemCardView.swift */; };
+		6FD696F928C555CB00677F7A /* GroupItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F628C555CB00677F7A /* GroupItemCardView.swift */; };
+		6FD696FA28C555CB00677F7A /* GroupItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696F628C555CB00677F7A /* GroupItemCardView.swift */; };
+		6FD696FC28C5561A00677F7A /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696FB28C5561A00677F7A /* GroupModel.swift */; };
+		6FD696FD28C5561A00677F7A /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696FB28C5561A00677F7A /* GroupModel.swift */; };
+		6FD696FE28C5561A00677F7A /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696FB28C5561A00677F7A /* GroupModel.swift */; };
+		6FD696FF28C5561A00677F7A /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD696FB28C5561A00677F7A /* GroupModel.swift */; };
+		6FD6970128C5598F00677F7A /* GroupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970028C5598F00677F7A /* GroupVM.swift */; };
+		6FD6970228C5598F00677F7A /* GroupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970028C5598F00677F7A /* GroupVM.swift */; };
+		6FD6970328C5598F00677F7A /* GroupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970028C5598F00677F7A /* GroupVM.swift */; };
+		6FD6970428C5598F00677F7A /* GroupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970028C5598F00677F7A /* GroupVM.swift */; };
+		6FD6970628C559A400677F7A /* GroupListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970528C559A400677F7A /* GroupListVM.swift */; };
+		6FD6970728C559A400677F7A /* GroupListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970528C559A400677F7A /* GroupListVM.swift */; };
+		6FD6970828C559A400677F7A /* GroupListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970528C559A400677F7A /* GroupListVM.swift */; };
+		6FD6970928C559A400677F7A /* GroupListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970528C559A400677F7A /* GroupListVM.swift */; };
+		6FD6971028C55EA700677F7A /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970F28C55EA700677F7A /* AddNewGroupView.swift */; };
+		6FD6971128C55EA700677F7A /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970F28C55EA700677F7A /* AddNewGroupView.swift */; };
+		6FD6971228C55EA700677F7A /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970F28C55EA700677F7A /* AddNewGroupView.swift */; };
+		6FD6971328C55EA700677F7A /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6970F28C55EA700677F7A /* AddNewGroupView.swift */; };
+		6FD6971528C5637500677F7A /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971428C5637500677F7A /* GroupDetailView.swift */; };
+		6FD6971628C5637500677F7A /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971428C5637500677F7A /* GroupDetailView.swift */; };
+		6FD6971728C5637500677F7A /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971428C5637500677F7A /* GroupDetailView.swift */; };
+		6FD6971828C5637500677F7A /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971428C5637500677F7A /* GroupDetailView.swift */; };
+		6FD6971A28C567A800677F7A /* GroupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971928C567A800677F7A /* GroupFileView.swift */; };
+		6FD6971B28C567A800677F7A /* GroupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971928C567A800677F7A /* GroupFileView.swift */; };
+		6FD6971C28C567A800677F7A /* GroupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971928C567A800677F7A /* GroupFileView.swift */; };
+		6FD6971D28C567A800677F7A /* GroupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971928C567A800677F7A /* GroupFileView.swift */; };
+		6FD6971F28C56AD500677F7A /* CreateNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971E28C56AD500677F7A /* CreateNewEventView.swift */; };
+		6FD6972028C56AD500677F7A /* CreateNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971E28C56AD500677F7A /* CreateNewEventView.swift */; };
+		6FD6972128C56AD500677F7A /* CreateNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971E28C56AD500677F7A /* CreateNewEventView.swift */; };
+		6FD6972228C56AD500677F7A /* CreateNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6971E28C56AD500677F7A /* CreateNewEventView.swift */; };
+		6FD6972428C56B8500677F7A /* CreateEventRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972328C56B8500677F7A /* CreateEventRouter.swift */; };
+		6FD6972528C56B8500677F7A /* CreateEventRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972328C56B8500677F7A /* CreateEventRouter.swift */; };
+		6FD6972628C56B8500677F7A /* CreateEventRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972328C56B8500677F7A /* CreateEventRouter.swift */; };
+		6FD6972728C56B8500677F7A /* CreateEventRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972328C56B8500677F7A /* CreateEventRouter.swift */; };
+		6FD6972A28C56C2C00677F7A /* SelectActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972928C56C2C00677F7A /* SelectActionView.swift */; };
+		6FD6972B28C56C2C00677F7A /* SelectActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972928C56C2C00677F7A /* SelectActionView.swift */; };
+		6FD6972C28C56C2C00677F7A /* SelectActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972928C56C2C00677F7A /* SelectActionView.swift */; };
+		6FD6972D28C56C2C00677F7A /* SelectActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972928C56C2C00677F7A /* SelectActionView.swift */; };
+		6FD6972F28C56CCB00677F7A /* SelectGroupEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972E28C56CCB00677F7A /* SelectGroupEventView.swift */; };
+		6FD6973028C56CCB00677F7A /* SelectGroupEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972E28C56CCB00677F7A /* SelectGroupEventView.swift */; };
+		6FD6973128C56CCB00677F7A /* SelectGroupEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972E28C56CCB00677F7A /* SelectGroupEventView.swift */; };
+		6FD6973228C56CCB00677F7A /* SelectGroupEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6972E28C56CCB00677F7A /* SelectGroupEventView.swift */; };
+		6FD6973428C56CF200677F7A /* AddNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973328C56CF200677F7A /* AddNewEventView.swift */; };
+		6FD6973528C56CF200677F7A /* AddNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973328C56CF200677F7A /* AddNewEventView.swift */; };
+		6FD6973628C56CF200677F7A /* AddNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973328C56CF200677F7A /* AddNewEventView.swift */; };
+		6FD6973728C56CF200677F7A /* AddNewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973328C56CF200677F7A /* AddNewEventView.swift */; };
+		6FD6973928C56E9800677F7A /* SelectActionTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973828C56E9800677F7A /* SelectActionTypeModel.swift */; };
+		6FD6973A28C56E9800677F7A /* SelectActionTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973828C56E9800677F7A /* SelectActionTypeModel.swift */; };
+		6FD6973B28C56E9800677F7A /* SelectActionTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973828C56E9800677F7A /* SelectActionTypeModel.swift */; };
+		6FD6973C28C56E9800677F7A /* SelectActionTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6973828C56E9800677F7A /* SelectActionTypeModel.swift */; };
 		867E97206B7E8E15D5E98BD5 /* Pods_MyClubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93454E2246056047FCE5213 /* Pods_MyClubApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -298,7 +350,7 @@
 		6FD6964E28C1334B00677F7A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		6FD6964F28C1334B00677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD6965728C1516D00677F7A /* HistoricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricView.swift; sourceTree = "<group>"; };
-		6FD6965C28C1518000677F7A /* GroupDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDashboardView.swift; sourceTree = "<group>"; };
+		6FD6965C28C1518000677F7A /* RootGroupScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootGroupScreenView.swift; sourceTree = "<group>"; };
 		6FD6966128C1518F00677F7A /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		6FD6966828C16C6700677F7A /* UserListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListScreenView.swift; sourceTree = "<group>"; };
 		6FD6966D28C17AB800677F7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -326,6 +378,19 @@
 		6FD696E628C54C6300677F7A /* SlidingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabView.swift; sourceTree = "<group>"; };
 		6FD696EB28C5506900677F7A /* PostScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScreenView.swift; sourceTree = "<group>"; };
 		6FD696F028C5509800677F7A /* EventScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScreenView.swift; sourceTree = "<group>"; };
+		6FD696F628C555CB00677F7A /* GroupItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItemCardView.swift; sourceTree = "<group>"; };
+		6FD696FB28C5561A00677F7A /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		6FD6970028C5598F00677F7A /* GroupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVM.swift; sourceTree = "<group>"; };
+		6FD6970528C559A400677F7A /* GroupListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListVM.swift; sourceTree = "<group>"; };
+		6FD6970F28C55EA700677F7A /* AddNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupView.swift; sourceTree = "<group>"; };
+		6FD6971428C5637500677F7A /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		6FD6971928C567A800677F7A /* GroupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFileView.swift; sourceTree = "<group>"; };
+		6FD6971E28C56AD500677F7A /* CreateNewEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventView.swift; sourceTree = "<group>"; };
+		6FD6972328C56B8500677F7A /* CreateEventRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventRouter.swift; sourceTree = "<group>"; };
+		6FD6972928C56C2C00677F7A /* SelectActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActionView.swift; sourceTree = "<group>"; };
+		6FD6972E28C56CCB00677F7A /* SelectGroupEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroupEventView.swift; sourceTree = "<group>"; };
+		6FD6973328C56CF200677F7A /* AddNewEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEventView.swift; sourceTree = "<group>"; };
+		6FD6973828C56E9800677F7A /* SelectActionTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectActionTypeModel.swift; sourceTree = "<group>"; };
 		7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCEBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676CCA94E7898C7ADFCCCA4 /* Pods-MyClubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClubApp.debug.xcconfig"; path = "Target Support Files/Pods-MyClubApp/Pods-MyClubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9A088568CC0FB4680155649E /* Pods_UJS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UJS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -526,6 +591,7 @@
 				6FD6958928BFC73300677F7A /* SignUpViewController.swift */,
 				6FD6967228C17EF900677F7A /* LoginSessionController.swift */,
 				6FD696A528C4039F00677F7A /* AuthenticationService.swift */,
+				6FD6972328C56B8500677F7A /* CreateEventRouter.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -533,11 +599,13 @@
 		6FD6957A28BEE3BB00677F7A /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6972828C56C1400677F7A /* NewEvent */,
+				6FD696F528C554F400677F7A /* TabGroups */,
 				6FD6957B28BEE3DE00677F7A /* RootEventScreenView.swift */,
 				6FD696CC28C443D000677F7A /* Cards */,
 				6FD6966628C1589000677F7A /* TabEvents */,
 				6FD6965728C1516D00677F7A /* HistoricView.swift */,
-				6FD6965C28C1518000677F7A /* GroupDashboardView.swift */,
+				6FD6965C28C1518000677F7A /* RootGroupScreenView.swift */,
 				6FD6966128C1518F00677F7A /* MessagesView.swift */,
 			);
 			path = Events;
@@ -587,6 +655,8 @@
 				6FD696BD28C432D000677F7A /* EventVM.swift */,
 				6FD696C228C43F0500677F7A /* EventListVM.swift */,
 				6FD696E128C44C8D00677F7A /* EventMemberVM.swift */,
+				6FD6970028C5598F00677F7A /* GroupVM.swift */,
+				6FD6970528C559A400677F7A /* GroupListVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -649,6 +719,7 @@
 				6FD696C728C441A300677F7A /* EventHomeScreenView.swift */,
 				6FD696EB28C5506900677F7A /* PostScreenView.swift */,
 				6FD696F028C5509800677F7A /* EventScreenView.swift */,
+				6FD6971E28C56AD500677F7A /* CreateNewEventView.swift */,
 			);
 			path = TabEvents;
 			sourceTree = "<group>";
@@ -677,6 +748,7 @@
 			children = (
 				6FD696AF28C42E5300677F7A /* EventMember.swift */,
 				6FD696AA28C42D9300677F7A /* Event.swift */,
+				6FD6973828C56E9800677F7A /* SelectActionTypeModel.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -685,6 +757,7 @@
 			isa = PBXGroup;
 			children = (
 				6FD696B428C42ED200677F7A /* GroupMember.swift */,
+				6FD696FB28C5561A00677F7A /* GroupModel.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -711,8 +784,29 @@
 				6FD696CD28C443EF00677F7A /* EventItemCardView.swift */,
 				6FD696D728C4461900677F7A /* EventDetailView.swift */,
 				6FD696DC28C4472D00677F7A /* AddMemberEventView.swift */,
+				6FD696F628C555CB00677F7A /* GroupItemCardView.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		6FD696F528C554F400677F7A /* TabGroups */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6970F28C55EA700677F7A /* AddNewGroupView.swift */,
+				6FD6971428C5637500677F7A /* GroupDetailView.swift */,
+				6FD6971928C567A800677F7A /* GroupFileView.swift */,
+			);
+			path = TabGroups;
+			sourceTree = "<group>";
+		};
+		6FD6972828C56C1400677F7A /* NewEvent */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6972928C56C2C00677F7A /* SelectActionView.swift */,
+				6FD6972E28C56CCB00677F7A /* SelectGroupEventView.swift */,
+				6FD6973328C56CF200677F7A /* AddNewEventView.swift */,
+			);
+			path = NewEvent;
 			sourceTree = "<group>";
 		};
 		CA796835D665DAE107F67A46 /* Pods */ = {
@@ -1118,12 +1212,18 @@
 				6FD696E228C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969228C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD6957F28BEE41D00677F7A /* AboutView.swift in Sources */,
+				6FD6971A28C567A800677F7A /* GroupFileView.swift in Sources */,
+				6FD6971F28C56AD500677F7A /* CreateNewEventView.swift in Sources */,
+				6FD6973428C56CF200677F7A /* AddNewEventView.swift in Sources */,
 				6FD6966928C16C6800677F7A /* UserListScreenView.swift in Sources */,
 				6FD6952628BEBE4400677F7A /* MyClubAppApp.swift in Sources */,
 				6FD6956828BED72B00677F7A /* Configuration.swift in Sources */,
+				6FD6971028C55EA700677F7A /* AddNewGroupView.swift in Sources */,
 				6FD6956B28BED72B00677F7A /* SignInScreenView.swift in Sources */,
 				6FD696A128C3EF6E00677F7A /* MemberListVM.swift in Sources */,
+				6FD6970628C559A400677F7A /* GroupListVM.swift in Sources */,
 				6FD6956A28BED72B00677F7A /* OnBoardingView.swift in Sources */,
+				6FD6970128C5598F00677F7A /* GroupVM.swift in Sources */,
 				6FD6967D28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD6959928C036A900677F7A /* Member.swift in Sources */,
 				6FD696E728C54C6300677F7A /* SlidingTabView.swift in Sources */,
@@ -1133,26 +1233,33 @@
 				6FD696D828C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6958628BFC67F00677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */,
+				6FD696FC28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AB28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F128C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696CE28C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD6972428C56B8500677F7A /* CreateEventRouter.swift in Sources */,
+				6FD696F728C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696EC28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD6956D28BED72B00677F7A /* BaseView.swift in Sources */,
 				6FD696D328C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD6973928C56E9800677F7A /* SelectActionTypeModel.swift in Sources */,
 				6FD696C328C43F0500677F7A /* EventListVM.swift in Sources */,
 				6FD696C828C441A300677F7A /* EventHomeScreenView.swift in Sources */,
 				6FD696BE28C432D000677F7A /* EventVM.swift in Sources */,
 				6FD6958E28C02AFF00677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967328C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6953228BEBE4600677F7A /* MyClubApp.xcdatamodeld in Sources */,
-				6FD6965D28C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD6965D28C1518000677F7A /* RootGroupScreenView.swift in Sources */,
+				6FD6971528C5637500677F7A /* GroupDetailView.swift in Sources */,
+				6FD6972A28C56C2C00677F7A /* SelectActionView.swift in Sources */,
 				6FD6968D28C3E60000677F7A /* UserDetailScreenView.swift in Sources */,
 				6FD6958428BFC5D500677F7A /* RootSignUpView.swift in Sources */,
 				6FD6956928BED72B00677F7A /* HomeWebView.swift in Sources */,
 				6FD6958228BEE4AA00677F7A /* AccountScreenView.swift in Sources */,
 				6FD6959E28C0462000677F7A /* AddressRegistryScreenView.swift in Sources */,
 				6FD6957C28BEE3DE00677F7A /* RootEventScreenView.swift in Sources */,
+				6FD6972F28C56CCB00677F7A /* SelectGroupEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1178,12 +1285,18 @@
 				6FD696E328C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969328C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD695AC28C12CA800677F7A /* AboutView.swift in Sources */,
+				6FD6971B28C567A800677F7A /* GroupFileView.swift in Sources */,
+				6FD6972028C56AD500677F7A /* CreateNewEventView.swift in Sources */,
+				6FD6973528C56CF200677F7A /* AddNewEventView.swift in Sources */,
 				6FD6966A28C16C6800677F7A /* UserListScreenView.swift in Sources */,
 				6FD695AD28C12CA800677F7A /* MyClubAppApp.swift in Sources */,
 				6FD695AE28C12CA800677F7A /* Configuration.swift in Sources */,
+				6FD6971128C55EA700677F7A /* AddNewGroupView.swift in Sources */,
 				6FD695AF28C12CA800677F7A /* SignInScreenView.swift in Sources */,
 				6FD696A228C3EF6E00677F7A /* MemberListVM.swift in Sources */,
+				6FD6970728C559A400677F7A /* GroupListVM.swift in Sources */,
 				6FD695B028C12CA800677F7A /* OnBoardingView.swift in Sources */,
+				6FD6970228C5598F00677F7A /* GroupVM.swift in Sources */,
 				6FD6967E28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD695B128C12CA800677F7A /* Member.swift in Sources */,
 				6FD696E828C54C6300677F7A /* SlidingTabView.swift in Sources */,
@@ -1193,26 +1306,33 @@
 				6FD696D928C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD695B328C12CA800677F7A /* EmailSignUpView.swift in Sources */,
 				6FD695B428C12CA800677F7A /* SignUpViewController.swift in Sources */,
+				6FD696FD28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AC28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F228C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696CF28C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD6972528C56B8500677F7A /* CreateEventRouter.swift in Sources */,
+				6FD696F828C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696ED28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD695B528C12CA800677F7A /* BaseView.swift in Sources */,
 				6FD696D428C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD6973A28C56E9800677F7A /* SelectActionTypeModel.swift in Sources */,
 				6FD696C428C43F0500677F7A /* EventListVM.swift in Sources */,
 				6FD696C928C441A300677F7A /* EventHomeScreenView.swift in Sources */,
 				6FD696BF28C432D000677F7A /* EventVM.swift in Sources */,
 				6FD695B628C12CA800677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967428C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD695B728C12CA800677F7A /* MyClubApp.xcdatamodeld in Sources */,
-				6FD6965E28C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD6965E28C1518000677F7A /* RootGroupScreenView.swift in Sources */,
+				6FD6971628C5637500677F7A /* GroupDetailView.swift in Sources */,
+				6FD6972B28C56C2C00677F7A /* SelectActionView.swift in Sources */,
 				6FD6968E28C3E60000677F7A /* UserDetailScreenView.swift in Sources */,
 				6FD695B828C12CA800677F7A /* RootSignUpView.swift in Sources */,
 				6FD695B928C12CA800677F7A /* HomeWebView.swift in Sources */,
 				6FD695BA28C12CA800677F7A /* AccountScreenView.swift in Sources */,
 				6FD695BB28C12CA800677F7A /* AddressRegistryScreenView.swift in Sources */,
 				6FD695BC28C12CA800677F7A /* RootEventScreenView.swift in Sources */,
+				6FD6973028C56CCB00677F7A /* SelectGroupEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1238,12 +1358,18 @@
 				6FD696E428C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969428C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD695FA28C1302600677F7A /* AboutView.swift in Sources */,
+				6FD6971C28C567A800677F7A /* GroupFileView.swift in Sources */,
+				6FD6972128C56AD500677F7A /* CreateNewEventView.swift in Sources */,
+				6FD6973628C56CF200677F7A /* AddNewEventView.swift in Sources */,
 				6FD6966B28C16C6800677F7A /* UserListScreenView.swift in Sources */,
 				6FD695FB28C1302600677F7A /* MyClubAppApp.swift in Sources */,
 				6FD695FC28C1302600677F7A /* Configuration.swift in Sources */,
+				6FD6971228C55EA700677F7A /* AddNewGroupView.swift in Sources */,
 				6FD695FD28C1302600677F7A /* SignInScreenView.swift in Sources */,
 				6FD696A328C3EF6E00677F7A /* MemberListVM.swift in Sources */,
+				6FD6970828C559A400677F7A /* GroupListVM.swift in Sources */,
 				6FD695FE28C1302600677F7A /* OnBoardingView.swift in Sources */,
+				6FD6970328C5598F00677F7A /* GroupVM.swift in Sources */,
 				6FD6967F28C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD695FF28C1302600677F7A /* Member.swift in Sources */,
 				6FD696E928C54C6300677F7A /* SlidingTabView.swift in Sources */,
@@ -1253,26 +1379,33 @@
 				6FD696DA28C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6960128C1302600677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6960228C1302600677F7A /* SignUpViewController.swift in Sources */,
+				6FD696FE28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AD28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F328C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696D028C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD6972628C56B8500677F7A /* CreateEventRouter.swift in Sources */,
+				6FD696F928C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696EE28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD6960328C1302600677F7A /* BaseView.swift in Sources */,
 				6FD696D528C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD6973B28C56E9800677F7A /* SelectActionTypeModel.swift in Sources */,
 				6FD696C528C43F0500677F7A /* EventListVM.swift in Sources */,
 				6FD696CA28C441A300677F7A /* EventHomeScreenView.swift in Sources */,
 				6FD696C028C432D000677F7A /* EventVM.swift in Sources */,
 				6FD6960428C1302600677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967528C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6960528C1302600677F7A /* MyClubApp.xcdatamodeld in Sources */,
-				6FD6965F28C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD6965F28C1518000677F7A /* RootGroupScreenView.swift in Sources */,
+				6FD6971728C5637500677F7A /* GroupDetailView.swift in Sources */,
+				6FD6972C28C56C2C00677F7A /* SelectActionView.swift in Sources */,
 				6FD6968F28C3E60000677F7A /* UserDetailScreenView.swift in Sources */,
 				6FD6960628C1302600677F7A /* RootSignUpView.swift in Sources */,
 				6FD6960728C1302600677F7A /* HomeWebView.swift in Sources */,
 				6FD6960828C1302600677F7A /* AccountScreenView.swift in Sources */,
 				6FD6960928C1302600677F7A /* AddressRegistryScreenView.swift in Sources */,
 				6FD6960A28C1302600677F7A /* RootEventScreenView.swift in Sources */,
+				6FD6973128C56CCB00677F7A /* SelectGroupEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1298,12 +1431,18 @@
 				6FD696E528C44C8D00677F7A /* EventMemberVM.swift in Sources */,
 				6FD6969528C3E74B00677F7A /* ToastView.swift in Sources */,
 				6FD6962528C131C800677F7A /* AboutView.swift in Sources */,
+				6FD6971D28C567A800677F7A /* GroupFileView.swift in Sources */,
+				6FD6972228C56AD500677F7A /* CreateNewEventView.swift in Sources */,
+				6FD6973728C56CF200677F7A /* AddNewEventView.swift in Sources */,
 				6FD6966C28C16C6800677F7A /* UserListScreenView.swift in Sources */,
 				6FD6962628C131C800677F7A /* MyClubAppApp.swift in Sources */,
 				6FD6962728C131C800677F7A /* Configuration.swift in Sources */,
+				6FD6971328C55EA700677F7A /* AddNewGroupView.swift in Sources */,
 				6FD6962828C131C800677F7A /* SignInScreenView.swift in Sources */,
 				6FD696A428C3EF6E00677F7A /* MemberListVM.swift in Sources */,
+				6FD6970928C559A400677F7A /* GroupListVM.swift in Sources */,
 				6FD6962928C131C800677F7A /* OnBoardingView.swift in Sources */,
+				6FD6970428C5598F00677F7A /* GroupVM.swift in Sources */,
 				6FD6968028C2926900677F7A /* AccountViewModel.swift in Sources */,
 				6FD6962A28C131C800677F7A /* Member.swift in Sources */,
 				6FD696EA28C54C6300677F7A /* SlidingTabView.swift in Sources */,
@@ -1313,26 +1452,33 @@
 				6FD696DB28C4461900677F7A /* EventDetailView.swift in Sources */,
 				6FD6962C28C131C800677F7A /* EmailSignUpView.swift in Sources */,
 				6FD6962D28C131C800677F7A /* SignUpViewController.swift in Sources */,
+				6FD696FF28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966528C1518F00677F7A /* MessagesView.swift in Sources */,
 				6FD696AE28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F428C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696D128C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FD6972728C56B8500677F7A /* CreateEventRouter.swift in Sources */,
+				6FD696FA28C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696EF28C5506900677F7A /* PostScreenView.swift in Sources */,
 				6FD6962E28C131C800677F7A /* BaseView.swift in Sources */,
 				6FD696D628C444FD00677F7A /* String+Shortcuts.swift in Sources */,
+				6FD6973C28C56E9800677F7A /* SelectActionTypeModel.swift in Sources */,
 				6FD696C628C43F0500677F7A /* EventListVM.swift in Sources */,
 				6FD696CB28C441A300677F7A /* EventHomeScreenView.swift in Sources */,
 				6FD696C128C432D000677F7A /* EventVM.swift in Sources */,
 				6FD6962F28C131C800677F7A /* EntryTextFieldView.swift in Sources */,
 				6FD6967628C17EF900677F7A /* LoginSessionController.swift in Sources */,
 				6FD6963028C131C800677F7A /* MyClubApp.xcdatamodeld in Sources */,
-				6FD6966028C1518000677F7A /* GroupDashboardView.swift in Sources */,
+				6FD6966028C1518000677F7A /* RootGroupScreenView.swift in Sources */,
+				6FD6971828C5637500677F7A /* GroupDetailView.swift in Sources */,
+				6FD6972D28C56C2C00677F7A /* SelectActionView.swift in Sources */,
 				6FD6969028C3E60000677F7A /* UserDetailScreenView.swift in Sources */,
 				6FD6963128C131C800677F7A /* RootSignUpView.swift in Sources */,
 				6FD6963228C131C800677F7A /* HomeWebView.swift in Sources */,
 				6FD6963328C131C800677F7A /* AccountScreenView.swift in Sources */,
 				6FD6963428C131C800677F7A /* AddressRegistryScreenView.swift in Sources */,
 				6FD6963528C131C800677F7A /* RootEventScreenView.swift in Sources */,
+				6FD6973228C56CCB00677F7A /* SelectGroupEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
