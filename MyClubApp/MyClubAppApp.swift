@@ -22,6 +22,7 @@ struct MyClubApp: App {
                 .environmentObject(HomeViewController())
                 .environmentObject(SignUpViewController())
                 .environmentObject(AccountViewModel())
+                .environmentObject(ClubModelController.shared)
         }
     }
 }

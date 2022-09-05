@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MY_CLUB_DATABASE_NAME</key>
+	<string>UJS TOULOUSE</string>
 	<key>MY_CLUB_NAME</key>
 	<string>SSFC</string>
 	<key>MY_CLUB_WEB_URL</key>
 	<string>https://ssfc.fr</string>
-	<key>MY_CLUB_DATABASE_NAME</key>
-	<string>UJS TOULOUSE</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
