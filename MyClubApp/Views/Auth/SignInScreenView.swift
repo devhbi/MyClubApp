@@ -30,7 +30,7 @@ struct SignInScreenView: View {
                 Text(clubName)
                     .font(.title)
                     .bold()
-                Spacer().frame(height: 32)
+                Spacer().frame(height: 16)
                 VStack {
                     HStack{
                         Text("Connectez-vous pour continuer!")
@@ -39,12 +39,6 @@ struct SignInScreenView: View {
                         Spacer()
                     }
                     
-                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("CONTINUER AVEC GOOGLE")
-//                        .foregroundColor(Color("PrimaryColor"))
-                    )
-                    
-                    Text("ou avec votre compte")
-                        .foregroundColor(Color.black.opacity(0.4))
                     
                     EntryTextFieldView(sfSymbolName: "envelope", placeHolder: "Email address", promptText: self.memberVM.emailPrompt, field: self.$memberVM.member.email)
                         .onAppear {self.memberVM.member.email = "hbi.test@gmail.com"}
@@ -79,9 +73,20 @@ struct SignInScreenView: View {
                                 .foregroundColor(Color("PrimaryColor"))
                         }
                     }
-                    .padding(.vertical, 12)
+                    //.padding(.vertical, 12)
                     
                     LoginButton
+                    
+                    Text("ou avec votre compte")
+                        .foregroundColor(Color.black.opacity(0.4))
+                    
+                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("CONTINUER AVEC GOOGLE")
+//                        .foregroundColor(Color("PrimaryColor"))
+                    )
+                    
+                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "apple")), text: Text("CONTINUER AVEC APPLE")
+//                        .foregroundColor(Color("PrimaryColor"))
+                    )
                 }
                 
                 Spacer()
@@ -118,7 +123,7 @@ struct SocalLoginButton: View {
             Spacer()
         }
         .padding()
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 48)
 //        .background(Color.white)
         .cornerRadius(16)
         .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
@@ -156,8 +161,8 @@ extension SignInScreenView  {
             Text("JE M'IDENTIFIE!")
                 .font(.system(size: 18, weight: .bold))
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-        .frame(height: 50)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 48)
+        //.frame(height: 50)
         .foregroundColor(.white)
         .background(LinearGradient(colors: [Color.gray, Color.blue], startPoint: .leading, endPoint: .trailing))
         .cornerRadius(5)
