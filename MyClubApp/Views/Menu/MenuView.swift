@@ -44,7 +44,7 @@ struct MenuView: View {
                 
                 UserMenuSection
                     .disabled(self.authSession.currentLoginState != .login)
-                    .opacity(self.authSession.currentLoginState != .login ? 0.5 : 1)
+                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
                 
                 Spacer()
                 
