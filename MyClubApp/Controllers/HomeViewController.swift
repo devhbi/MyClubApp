@@ -12,5 +12,5 @@ class HomeViewController: ObservableObject {
     enum AvailableViews {
         case home, account, login, about, event, users, signup
     }
-    @Published var currentView: AvailableViews = .login
+    @Published var currentView: AvailableViews = .home
 }

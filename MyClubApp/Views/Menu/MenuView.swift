@@ -38,19 +38,19 @@ struct MenuView: View {
 
                 HomeMenuSection
                     .disabled(self.authSession.currentLoginState != .login)
-                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                    .opacity(self.authSession.currentLoginState != .login ? 0.5 : 1)
                 
                 AccountMenuSection
                 
                 UserMenuSection
                     .disabled(self.authSession.currentLoginState != .login)
-                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                    .opacity(self.authSession.currentLoginState != .login ? 0.5 : 1)
                 
                 Spacer()
                 
                 AboutMenuSection
-                    .disabled(self.authSession.currentLoginState != .login)
-                    .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                    //.disabled(self.authSession.currentLoginState != .login)
+                    //.opacity(self.authSession.currentLoginState != .login ? 0.5 : 1)
             }
             
             Spacer()
@@ -218,7 +218,7 @@ extension MenuView  {
                     }
                 }
                 .disabled(self.authSession.currentLoginState != .login)
-                .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                .opacity(self.authSession.currentLoginState != .login ? 0.5 : 1)
                 .padding(.top, 8)
                 
                 Button(action: {
@@ -240,7 +240,7 @@ extension MenuView  {
                     }
                 }
                 .disabled(self.authSession.currentLoginState != .login)
-                .opacity(self.authSession.currentLoginState != .login ? 0 : 1)
+                .opacity(self.authSession.currentLoginState != .login ? 0.5 : 1)
                 .padding(.top, 8)
             }
         }
@@ -317,6 +317,7 @@ extension MenuView  {
             Button(action: {
                 withAnimation(.default) {
                     self.presentedView.currentView = .about
+                    self.show.toggle()
                 }
             }){
                 HStack(spacing: 22) {

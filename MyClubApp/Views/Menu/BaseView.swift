@@ -123,8 +123,15 @@ extension BaseView  {
                 }
             }
             else {
-                if presentedView.currentView == .login {
+                if presentedView.currentView == .home {
+                    let clubUrl: String = try! Configuration.value(for:"MY_CLUB_WEB_URL")
+                    HomeWebView(url: URL(string: clubUrl)!)
+                }
+                else if ( presentedView.currentView  == .login) {
                     SignInScreenView(memberVM: self.memberVM)
+                }
+                else if ( presentedView.currentView  == .about) {
+                    AboutView()
                 }
                 else {
                     RootSignUpView()
