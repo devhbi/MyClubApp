@@ -10,6 +10,14 @@
 		1C509521120B520F644030AC /* Pods_UJS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A088568CC0FB4680155649E /* Pods_UJS.framework */; };
 		27E77ED5CB47BC13B6ACCF8A /* Pods_SSFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4009D293F1B1E0F27035E04C /* Pods_SSFC.framework */; };
 		4B6D95F12FB14DC18EDEE028 /* Pods_FCEBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB39839D3F6CD2670B68150 /* Pods_FCEBM.framework */; };
+		6FA8E91128E87E5700856830 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91028E87E5700856830 /* AuthManager.swift */; };
+		6FA8E91228E87E5700856830 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91028E87E5700856830 /* AuthManager.swift */; };
+		6FA8E91328E87E5700856830 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91028E87E5700856830 /* AuthManager.swift */; };
+		6FA8E91428E87E5700856830 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91028E87E5700856830 /* AuthManager.swift */; };
+		6FA8E91628EA228A00856830 /* NonceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91528EA228A00856830 /* NonceGenerator.swift */; };
+		6FA8E91728EA228A00856830 /* NonceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91528EA228A00856830 /* NonceGenerator.swift */; };
+		6FA8E91828EA228A00856830 /* NonceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91528EA228A00856830 /* NonceGenerator.swift */; };
+		6FA8E91928EA228A00856830 /* NonceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8E91528EA228A00856830 /* NonceGenerator.swift */; };
 		6FD6952628BEBE4400677F7A /* MyClubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */; };
 		6FD6952A28BEBE4600677F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952928BEBE4600677F7A /* Assets.xcassets */; };
 		6FD6952D28BEBE4600677F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6952C28BEBE4600677F7A /* Preview Assets.xcassets */; };
@@ -316,6 +324,8 @@
 		42103E0AB36E6D67374F3986 /* Pods-UJS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UJS.release.xcconfig"; path = "Target Support Files/Pods-UJS/Pods-UJS.release.xcconfig"; sourceTree = "<group>"; };
 		476FD63FC5799E2CF22BCCAE /* Pods-FCEBM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCEBM.debug.xcconfig"; path = "Target Support Files/Pods-FCEBM/Pods-FCEBM.debug.xcconfig"; sourceTree = "<group>"; };
 		57FDF41A4C70E5F1491900A8 /* Pods-FCEBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCEBM.release.xcconfig"; path = "Target Support Files/Pods-FCEBM/Pods-FCEBM.release.xcconfig"; sourceTree = "<group>"; };
+		6FA8E91028E87E5700856830 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		6FA8E91528EA228A00856830 /* NonceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonceGenerator.swift; sourceTree = "<group>"; };
 		6FD6952228BEBE4400677F7A /* MyClubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6952528BEBE4400677F7A /* MyClubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClubAppApp.swift; sourceTree = "<group>"; };
 		6FD6952928BEBE4600677F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -604,6 +614,8 @@
 				6FD696A528C4039F00677F7A /* AuthenticationService.swift */,
 				6FD6972328C56B8500677F7A /* CreateEventRouter.swift */,
 				6FE3CAC028C6B3DF0006F69F /* ClubModelController.swift */,
+				6FA8E91028E87E5700856830 /* AuthManager.swift */,
+				6FA8E91528EA228A00856830 /* NonceGenerator.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1259,9 +1271,11 @@
 				6FD6958A28BFC73300677F7A /* SignUpViewController.swift in Sources */,
 				6FD696FC28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966228C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FA8E91128E87E5700856830 /* AuthManager.swift in Sources */,
 				6FD696AB28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F128C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696CE28C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FA8E91628EA228A00856830 /* NonceGenerator.swift in Sources */,
 				6FD6972428C56B8500677F7A /* CreateEventRouter.swift in Sources */,
 				6FD696F728C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696EC28C5506900677F7A /* PostScreenView.swift in Sources */,
@@ -1333,9 +1347,11 @@
 				6FD695B428C12CA800677F7A /* SignUpViewController.swift in Sources */,
 				6FD696FD28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966328C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FA8E91228E87E5700856830 /* AuthManager.swift in Sources */,
 				6FD696AC28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F228C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696CF28C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FA8E91728EA228A00856830 /* NonceGenerator.swift in Sources */,
 				6FD6972528C56B8500677F7A /* CreateEventRouter.swift in Sources */,
 				6FD696F828C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696ED28C5506900677F7A /* PostScreenView.swift in Sources */,
@@ -1407,9 +1423,11 @@
 				6FD6960228C1302600677F7A /* SignUpViewController.swift in Sources */,
 				6FD696FE28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966428C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FA8E91328E87E5700856830 /* AuthManager.swift in Sources */,
 				6FD696AD28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F328C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696D028C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FA8E91828EA228A00856830 /* NonceGenerator.swift in Sources */,
 				6FD6972628C56B8500677F7A /* CreateEventRouter.swift in Sources */,
 				6FD696F928C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696EE28C5506900677F7A /* PostScreenView.swift in Sources */,
@@ -1481,9 +1499,11 @@
 				6FD6962D28C131C800677F7A /* SignUpViewController.swift in Sources */,
 				6FD696FF28C5561A00677F7A /* GroupModel.swift in Sources */,
 				6FD6966528C1518F00677F7A /* MessagesView.swift in Sources */,
+				6FA8E91428E87E5700856830 /* AuthManager.swift in Sources */,
 				6FD696AE28C42D9300677F7A /* Event.swift in Sources */,
 				6FD696F428C5509800677F7A /* EventScreenView.swift in Sources */,
 				6FD696D128C443EF00677F7A /* EventItemCardView.swift in Sources */,
+				6FA8E91928EA228A00856830 /* NonceGenerator.swift in Sources */,
 				6FD6972728C56B8500677F7A /* CreateEventRouter.swift in Sources */,
 				6FD696FA28C555CB00677F7A /* GroupItemCardView.swift in Sources */,
 				6FD696EF28C5506900677F7A /* PostScreenView.swift in Sources */,

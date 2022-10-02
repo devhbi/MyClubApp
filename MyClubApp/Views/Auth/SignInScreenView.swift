@@ -11,6 +11,7 @@ import SwiftUI
 struct SignInScreenView: View {
     @EnvironmentObject var presentedView: HomeViewController
     @EnvironmentObject var authSession: LoginSessionController
+    @EnvironmentObject var authManager: AuthManager
     @StateObject var memberVM: MemberVM
     @State private var isPresentedResetUserAlert = false
     
@@ -80,13 +81,23 @@ struct SignInScreenView: View {
                     Text("ou avec votre compte")
                         .foregroundColor(Color.black.opacity(0.4))
                     
-                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("CONTINUER AVEC GOOGLE")
-//                        .foregroundColor(Color("PrimaryColor"))
-                    )
+                    Button(action: {
+                        print("CONTINUER AVEC GOOGLE pressed")
+                        
+                        self.authManager.login(with: .signInWitGoogle)
+                    }, label: {
+                        
+                    })
+                    .buttonStyle(SampleStyle(image: Image(uiImage: #imageLiteral(resourceName: "google")), text: Text("CONTINUER AVEC GOOGLE")))
                     
-                    SocalLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "apple")), text: Text("CONTINUER AVEC APPLE")
-//                        .foregroundColor(Color("PrimaryColor"))
-                    )
+                    
+                    Button(action: {
+                        print("CONTINUER AVEC APPLE pressed")
+                        self.authManager.login(with: .signInWithApple)
+                    }, label: {
+                        
+                    })
+                    .buttonStyle(SampleStyle(image: Image(uiImage: #imageLiteral(resourceName: "apple")), text: Text("CONTINUER AVEC APPLE")))
                 }
                 
                 Spacer()
@@ -112,8 +123,34 @@ struct SignInScreenView_Previews: PreviewProvider {
 struct SocalLoginButton: View {
     var image: Image
     var text: Text
-    
+    //let action: () -> Void
     var body: some View {
+        
+        Button(action: {
+            //action()
+        }) {
+            HStack {
+                image
+                    .padding(.horizontal)
+                Spacer()
+                text
+                    .font(.system(size: 14, weight: .bold))
+                Spacer()
+            }
+            .padding()
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 48)
+    //        .background(Color.white)
+            .cornerRadius(16)
+            .shadow(color: Color.black.opacity(0.08), radius: 60, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 16)
+            .overlay(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(UIColor.label), lineWidth: 1))
+        }
+    }
+}
+
+struct SampleStyle: ButtonStyle {
+    var image: Image
+    var text: Text
+    func makeBody(configuration: Self.Configuration) -> some View {
         HStack {
             image
                 .padding(.horizontal)

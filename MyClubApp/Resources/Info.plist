@@ -2,12 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Google Sign In</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.202137656979-qalc6ptf20jodfjicfo5n1vq7ggaem6c</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Bundle ID</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>be-is.fr.UJS-Toulouse-Project</string>
+			</array>
+		</dict>
+	</array>
+	<key>MY_CLUB_DATABASE_NAME</key>
+	<string>UJS TOULOUSE</string>
 	<key>MY_CLUB_NAME</key>
 	<string>FCEBM</string>
 	<key>MY_CLUB_WEB_URL</key>
 	<string>https://fcebm.fr</string>
-	<key>MY_CLUB_DATABASE_NAME</key>
-	<string>UJS TOULOUSE</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
